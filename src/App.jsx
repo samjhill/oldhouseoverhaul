@@ -16,7 +16,7 @@ function App() {
       <section className="about">
           <h2>Who are we?</h2>
           <p>
-            We're a group of people who seek adventure, wherever we can find it. Expect physical challenge, adrenaline, and the unexpected. A great mixture of <a href="https://www.rei.com/blog/climb/fun-scale" target="_blank">type 1 and type 2 fun</a>.
+            We're a group of people who seek adventure, wherever we can find it. Expect physical challenges, adrenaline, and the unexpected. A great mixture of <a href="https://www.rei.com/blog/climb/fun-scale" target="_blank">type 1 and type 2 fun</a>.
           </p>
         </section>
         <section className="about">
