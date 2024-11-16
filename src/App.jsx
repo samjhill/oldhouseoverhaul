@@ -13,8 +13,14 @@ function App() {
         <p>Explore the path less traveled. Join us on unforgettable adventures!</p>
       </header>
       <main className="main-content">
+      <section className="about">
+          <h2>Who are we?</h2>
+          <p>
+            We're a group of people who seek adventure, wherever we can find it. Expect physical challenge, adrenaline, and the unexpected. A great mixture of <a href="https://www.rei.com/blog/climb/fun-scale" target="_blank">type 1 and type 2 fun</a>.
+          </p>
+        </section>
         <section className="about">
-          <h2>Why Join Us?</h2>
+          <h2>Why join us?</h2>
           <p>
             Hidden Trail Society is your gateway to discovering the hidden gems of the outdoors. 
             Whether you're a seasoned adventurer or just starting, we provide community, guidance, and unforgettable experiences.
