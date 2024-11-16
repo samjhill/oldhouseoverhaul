@@ -29,8 +29,8 @@ function App() {
         <section>
           <h2>Upcoming trip</h2>
           <a href="https://bikepacking.com/routes/delaware-water-gap-loop/" target="_blank">Delaware Water Gap Loop</a>
-          <p>Date: Spring 2025 (exact date tbd)</p>
-          <p>Enjoy a weekend trip biking through the beautiful NJ & PA border trails. We will be hosting training sessions and how to pack to make sure you're ready for it!</p>
+          <p>Date: Spring 2025</p>
+          <p>Enjoy a weekend trip biking and camping through the beautiful NJ & PA border trails. We will be hosting training sessions and a packing guide to make sure you're ready for it!</p>
         </section>
         <section className="signup">
         <img src={trailPhoto} alt="green trail" className="logo" />
