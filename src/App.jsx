@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import ContactForm from "../contactform";
+import React from "react";
+import ContactForm from "./ContactForm";
 import "./App.css";
 import trailPhoto from "./assets/images/green-trail.jpg";
 import logo from "./assets/images/logo.jpg";
@@ -24,7 +24,7 @@ function App() {
           <h2>Upcoming trip</h2>
           <a href="https://bikepacking.com/routes/delaware-water-gap-loop/" target="_blank">Delaware Water Gap Loop</a>
           <p>Date: Spring 2025 (exact date tbd)</p>
-          <p>Enjoy a weekend trip biking through the beautiful NJ & PA border trails. We will be hosting training sessions and packing guides to make sure you're ready for it!</p>
+          <p>Enjoy a weekend trip biking through the beautiful NJ & PA border trails. We will be hosting training sessions and how to pack to make sure you're ready for it!</p>
         </section>
         <section className="signup">
         <img src={trailPhoto} alt="green trail" className="logo" />
