@@ -33,9 +33,10 @@ function App() {
           <p>Enjoy a weekend trip biking and camping through the beautiful NJ & PA border trails. We will be hosting training sessions and a packing guide to make sure you're ready for it!</p>
         </section>
         <section className="signup">
-        <img src={trailPhoto} alt="green trail" className="logo" />
+        
           <h2>Sign Up for Adventure</h2>
           <ContactForm />
+          <img src={trailPhoto} alt="green trail" className="logo" />
         </section>
       </main>
       <footer className="footer">

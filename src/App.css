@@ -104,3 +104,10 @@ img {
   background-color: #2e8b57;
   color: white;
 }
+
+
+@media (min-width:801px)  {
+  .header img {
+    max-width: 600px;
+  }
+}
