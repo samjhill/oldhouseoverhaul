@@ -41,7 +41,7 @@ function App() {
         </section>
       </main>
       <footer className="footer">
-        <p>&copy; 2024 Sam Hill. All rights reserved.</p>
+        <p>made with love by Sam Hill</p>
       </footer>
     </div>
   );
