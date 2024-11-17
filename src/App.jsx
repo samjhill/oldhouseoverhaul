@@ -30,7 +30,7 @@ function App() {
           <h2>Upcoming trip</h2>
           <a href="https://bikepacking.com/routes/delaware-water-gap-loop/" target="_blank">Delaware Water Gap Loop</a>
           <p>Date: Spring 2025</p>
-          <p>Enjoy a weekend trip biking and camping through the beautiful NJ & PA border trails. We will be hosting training sessions and a packing guide to make sure you're ready for it!</p>
+          <p>Enjoy a weekend trip biking and camping through the beautiful NJ & PA border trails. We will be hosting training sessions and a <a href="https://docs.google.com/document/d/1vHXuW48aZhqn-rLA0j1S9ZBIUw6bPqPzH7H4a-vElmg/edit?tab=t.0#heading=h.wvabb6s3m6y4" target="_blank">packing guide</a> to make sure you're ready for it!</p>
           <iframe style={{width: "100%", height: "500px"}} src="https://ridewithgps.com/embeds?type=route&sampleGraph=true&overlay=esriTopo&hideFullLink=1&id=34254698" scrolling="no"></iframe>
         </section>
         <section className="signup">
