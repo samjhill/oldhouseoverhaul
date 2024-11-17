@@ -36,7 +36,7 @@ function App() {
         
           <h2>Sign Up for Adventure</h2>
           <ContactForm />
-          <img src={trailPhoto} alt="green trail" className="logo" />
+          {/* <img src={trailPhoto} alt="green trail" className="logo" /> */}
         </section>
       </main>
       <footer className="footer">
