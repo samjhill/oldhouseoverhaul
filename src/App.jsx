@@ -1,7 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import "./App.css";
-import trailPhoto from "./assets/images/green-trail.jpg";
 import logo from "./assets/images/logo.jpg";
 
 function App() {
@@ -12,6 +11,12 @@ function App() {
         <p>At Old House Overhaul, we specialize in bringing new life to historic homes. With years of experience and a passion for preserving the charm and character of older properties, we offer comprehensive renovation services tailored to your unique needs. Whether you're restoring a century-old home or making modern upgrades to enhance its functionality, we're here to guide you through every step of the process.</p>
       </header>
       <main className="main-content">
+      <section className="links">
+          <h2>Our work</h2>
+          <ul>
+            <li><a href="https://www.youtube.com/@Old_House_Overhaul" target="_blank">🎥Youtube channel</a></li>
+          </ul>
+        </section>
       <section className="about">
           <h2>Our Services</h2>
           <ul>
