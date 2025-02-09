@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <header className="header">
         <img src={logo} alt="Old House Overhaul Logo" className="logo" />
-        <p>At Old House Overhaul, we specialize in bringing new life to historic homes. With years of experience and a passion for preserving the charm and character of older properties, we offer comprehensive renovation services tailored to your unique needs. Whether you're restoring a century-old home or making modern upgrades to enhance its functionality, we're here to guide you through every step of the process.</p>
+        <p>At Old House Overhaul, we specialize in bringing new life to historic homes in the Bloomfield, Glen Ridge, and Montclair areas. With years of experience and a passion for preserving the charm and character of older properties, we offer comprehensive renovation services tailored to your unique needs. Whether you're restoring a century-old home or making modern upgrades to enhance its functionality, we're here to guide you through every step of the process.</p>
       </header>
       <main className="main-content">
       <section className="links">
