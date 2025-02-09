@@ -8,50 +8,37 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <img src={logo} alt="Hidden Trail Society Logo" className="logo" />
-        {/* <h1>Hidden Trail Society</h1> */}
-        <p>Explore the path less traveled. Join us on unforgettable adventures!</p>
+        <img src={logo} alt="Old House Overhaul Logo" className="logo" />
+        <p>At Old House Overhaul, we specialize in bringing new life to historic homes. With years of experience and a passion for preserving the charm and character of older properties, we offer comprehensive renovation services tailored to your unique needs. Whether you're restoring a century-old home or making modern upgrades to enhance its functionality, we're here to guide you through every step of the process.</p>
       </header>
       <main className="main-content">
       <section className="about">
-          <h2>Who are we?</h2>
-          <p>
-            We're a group of people who seek adventure in the NYC - NJ - PA area. Expect physical challenges, adrenaline, and the unexpected. A great mixture of <a href="https://www.rei.com/blog/climb/fun-scale" target="_blank">type 1 and type 2 fun</a>.
-          </p>
+          <h2>Our Services</h2>
+          <ul>
+            <li><strong>Full Home Renovations:</strong> From foundation repairs to new additions, we handle every aspect of your project with care and precision.</li>
+            <li><strong>Historical Restorations:</strong> Our expertise in working with older homes ensures that your renovation respects the building’s history while modernizing its functionality.</li>
+            <li><strong>Kitchen & Bathroom Remodeling:</strong> We create beautiful, functional spaces that blend modern amenities with classic design elements.</li>
+            <li><strong>Basement Finishing:</strong> Transform your basement into a valuable, livable space for your family.</li>
+            <li><strong>Custom Additions:</strong> Whether it's a new second floor, an extra bathroom, or any custom project, we make your vision a reality.</li>
+          </ul>
         </section>
         <section className="about">
-          <h2>Why join us?</h2>
-          <p>
-            Hidden Trail Society is your gateway to discovering the hidden gems of the outdoors. 
-            Whether you're a seasoned adventurer or just starting, we provide community, guidance, and unforgettable experiences.
-          </p>
-        </section>
-        <section>
-          <h2>Upcoming trip</h2>
-          <a href="https://bikepacking.com/routes/delaware-water-gap-loop/" target="_blank">Delaware Water Gap Loop</a>
-          <p>Date: Spring 2025</p>
-          <p>Enjoy a weekend trip biking and camping through the beautiful NJ & PA border trails. We will be hosting training sessions and a <a href="https://docs.google.com/document/d/1vHXuW48aZhqn-rLA0j1S9ZBIUw6bPqPzH7H4a-vElmg/edit?tab=t.0#heading=h.wvabb6s3m6y4" target="_blank">packing guide</a> to make sure you're ready for it!</p>
-          <iframe style={{width: "100%", height: "500px"}} src="https://ridewithgps.com/embeds?type=route&sampleGraph=true&overlay=esriTopo&hideFullLink=1&id=34254698" scrolling="no"></iframe>
-        </section>
-        <section>
-          <h2>Future trips</h2>
+          <h2>Why Choose Us?</h2>
           <ul>
-            <li>Sailing</li>
-            <li>Climbing</li>
-            <li>Paintball</li>
-            <li>Skiing</li>
-            <li>Kayaking</li>
+            <li><strong>Experience:</strong> With years of hands-on experience, we understand the intricacies of older homes and how to work with their unique challenges.</li>
+            <li><strong>Quality Craftsmanship:</strong> We pride ourselves on delivering high-quality work with attention to detail.</li>
+            <li><strong>Personalized Approach:</strong> We collaborate closely with you to ensure your vision comes to life while staying within your budget.</li>
+            <li><strong>Licensed & Insured:</strong> We are fully licensed and insured, giving you peace of mind throughout your renovation.</li>
           </ul>
         </section>
         <section className="signup">
         
-          <h2>Sign Up for Adventure</h2>
+          <h2>Contact Us Today</h2>
           <ContactForm />
-          {/* <img src={trailPhoto} alt="green trail" className="logo" /> */}
         </section>
       </main>
       <footer className="footer">
-        <p>made with love by Sam Hill</p>
+        <p>made with love by <a href="https://hillside.llc">Hillside Innovations</a></p>
       </footer>
     </div>
   );
