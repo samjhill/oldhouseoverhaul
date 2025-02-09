@@ -2,6 +2,10 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import "./App.css";
 import logo from "./assets/images/logo.jpg";
+import apartment from "./assets/images/apartment-before-after.jpg"
+import couple from "./assets/images/couple.jpg";
+import diningRoom from "./assets/images/dining-room.jpg"
+import wallBrick from "./assets/images/wall-brick.jpg"
 
 function App() {
   return (
@@ -11,13 +15,9 @@ function App() {
         <p>At Old House Overhaul, we specialize in bringing new life to historic homes in the Bloomfield, Glen Ridge, and Montclair areas. With years of experience and a passion for preserving the charm and character of older properties, we offer comprehensive renovation services tailored to your unique needs. Whether you're restoring a century-old home or making modern upgrades to enhance its functionality, we're here to guide you through every step of the process.</p>
       </header>
       <main className="main-content">
-      <section className="links">
-          <h2>Our work</h2>
-          <ul>
-            <li><a href="https://www.youtube.com/@Old_House_Overhaul" target="_blank">🎥Youtube channel</a></li>
-          </ul>
-        </section>
+      
       <section className="about">
+          <img src={wallBrick} />
           <h2>Our Services</h2>
           <ul>
             <li><strong>Full Home Renovations:</strong> From foundation repairs to new additions, we handle every aspect of your project with care and precision.</li>
@@ -27,6 +27,7 @@ function App() {
             <li><strong>Custom Additions:</strong> Whether it's a new second floor, an extra bathroom, or any custom project, we make your vision a reality.</li>
           </ul>
         </section>
+        <img src={couple} />
         <section className="about">
           <h2>Why Choose Us?</h2>
           <ul>
@@ -36,6 +37,14 @@ function App() {
             <li><strong>Licensed & Insured:</strong> We are fully licensed and insured, giving you peace of mind throughout your renovation.</li>
           </ul>
         </section>
+        <img src={diningRoom} />
+        <section className="links">
+          <h2>Links</h2>
+          <ul>
+            <li><a href="https://www.youtube.com/@Old_House_Overhaul" target="_blank">🎥Youtube channel</a></li>
+          </ul>
+        </section>
+        <img src={apartment} />
         <section className="signup">
         
           <h2>Contact Us Today</h2>
