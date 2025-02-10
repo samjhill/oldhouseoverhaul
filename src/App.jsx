@@ -47,7 +47,7 @@ function App() {
         </section>
         <section>
           <h2>Background</h2>
-          <p style={{fontStyle: "italic"}}>I’m a software engineer turned hands-on renovator. I’ve always been passionate about building and fixing things, and now, I’ve taking on my biggest project yet: renovating old homes from the ground up.</p>
+          <p style={{fontStyle: "italic"}}>I’m a software engineer turned hands-on renovator. I’ve always been passionate about building and fixing things, and now, I’ve taken on my biggest project yet: renovating old homes from the ground up.</p>
           
           <div style={{display: "inline-flex", marginLeft: "1rem"}}>
           
