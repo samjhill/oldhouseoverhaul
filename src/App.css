@@ -116,6 +116,11 @@ img {
   max-width: 500px;
 } */
 
+.headshot {
+  max-width: 100px;
+  border-radius: 100px;
+}
+
 li {
   list-style-type: none;
   margin-bottom: .5rem;
