@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import "./App.css";
-import logo from "./assets/images/logo.jpg";
+import logo from "./assets/images/logo_transparent.png";
 import apartment from "./assets/images/apartment-before-after.jpg"
 import couple from "./assets/images/couple.jpg";
 import diningRoom from "./assets/images/dining-room.jpg"
@@ -12,7 +12,7 @@ function App() {
     <div className="app">
       <header className="header">
         <img src={logo} alt="Old House Overhaul Logo" className="logo" />
-        <p style={{fontStyle: "italic"}}>Restoring the Past; Building the Future</p>
+        <h3 style={{fontStyle: "italic"}}>Restoring the Past; Building the Future</h3>
         <p>At Old House Overhaul, we specialize in bringing new life to historic homes in the Bloomfield, Glen Ridge, and Montclair areas. With years of experience and a passion for preserving the charm and character of older properties, we offer comprehensive renovation services tailored to your unique needs. Whether you're restoring a century-old home or making modern upgrades to enhance its functionality, we're here to guide you through every step of the process.</p>
       </header>
       <main className="main-content">
