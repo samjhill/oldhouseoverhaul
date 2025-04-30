@@ -147,5 +147,16 @@
     ],
     "progress": 0,
     "group": false
+  },
+  {
+    "id": "finishes",
+    "name": "Finishes",
+    "start": "2025-08-01",
+    "end": "2025-08-30",
+    "dependencies": [
+      "rough-electric"
+    ],
+    "progress": 0,
+    "group": false
   }
 ]
