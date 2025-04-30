@@ -1,0 +1,151 @@
+[
+  {
+    "id": "basement",
+    "name": "Basement",
+    "start": "2025-04-28",
+    "end": "2025-05-08",
+    "progress": 25,
+    "group": true
+  },
+  {
+    "id": "demo",
+    "name": "Demolition",
+    "start": "2025-05-09",
+    "end": "2025-05-17",
+    "progress": 0,
+    "group": true
+  },
+  {
+    "id": "clear-basement",
+    "name": "Clear out basement",
+    "start": "2025-05-09",
+    "end": "2025-05-10",
+    "dependencies": [
+      "walkthrough"
+    ],
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "demo-floors",
+    "name": "Demo 1st floor",
+    "start": "2025-05-10",
+    "end": "2025-05-13",
+    "dependencies": [
+      "clear-basement"
+    ],
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "demo-floors",
+    "name": "Demo 2nd floor",
+    "start": "2025-05-14",
+    "end": "2025-05-17",
+    "dependencies": [
+      "clear-basement"
+    ],
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "structure",
+    "name": "Structure",
+    "start": "2025-05-18",
+    "end": "2025-06-10",
+    "progress": 0,
+    "group": true,
+    "dependencies": [
+      "demo"
+    ]
+  },
+  {
+    "id": "addition-shell",
+    "name": "Build second-floor deck",
+    "start": "2025-05-18",
+    "end": "2025-05-28",
+    "dependencies": [
+      "basement-support"
+    ],
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "addition-shell",
+    "name": "Build second-floor addition",
+    "start": "2025-05-29",
+    "end": "2025-06-10",
+    "dependencies": [
+      "basement-support"
+    ],
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "plumbing",
+    "name": "Plumbing",
+    "start": "2025-06-11",
+    "end": "2025-06-25",
+    "progress": 0,
+    "group": true,
+    "dependencies": [
+      "structure"
+    ]
+  },
+  {
+    "id": "rough-plumbing",
+    "name": "Rough-in plumbing",
+    "start": "2025-06-11",
+    "end": "2025-06-15",
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "install-fixtures",
+    "name": "Install fixtures & hook-ups",
+    "start": "2025-06-16",
+    "end": "2025-06-20",
+    "dependencies": [
+      "rough-plumbing"
+    ],
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "hvac",
+    "name": "HVAC",
+    "start": "2025-06-25",
+    "end": "2025-07-14",
+    "progress": 0,
+    "dependencies": ["plumbing"],
+    "group": true
+  },
+  {
+    "id": "electrical",
+    "name": "Electrical",
+    "start": "2025-07-14",
+    "end": "2025-07-30",
+    "progress": 0,
+    "group": true,
+    "dependencies": ["hvac"]
+  },
+  {
+    "id": "rough-electric",
+    "name": "Rough-in electrical",
+    "start": "2025-07-14",
+    "end": "2025-07-20",
+    "progress": 0,
+    "group": false
+  },
+  {
+    "id": "install-lighting",
+    "name": "Install lighting & outlets",
+    "start": "2025-07-20",
+    "end": "2025-07-31",
+    "dependencies": [
+      "rough-electric"
+    ],
+    "progress": 0,
+    "group": false
+  }
+]
