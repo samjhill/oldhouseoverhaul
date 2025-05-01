@@ -95,3 +95,7 @@
     color: white
 }
 
+.bar-label {
+    fill: white !important;
+    font-weight: bold !important;
+}

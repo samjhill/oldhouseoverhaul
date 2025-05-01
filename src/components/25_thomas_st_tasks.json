@@ -1,5 +1,12 @@
 [
   {
+    "name": "Permits",
+    "start": "2025-04-25",
+    "end": "2025-05-01",
+    "progress": 100,
+    "owner": "Ashley Platt"
+  },
+  {
     "name": "Framing",
     "start": "2025-05-01",
     "end": "2025-05-03",
@@ -23,7 +30,7 @@
   {
     "name": "🟨 Structural Inspection",
     "start": "2025-05-15",
-    "end": "2025-05-15",
+    "end": "2025-05-17",
     "progress": 0,
     "owner": "Inspector",
     "status": "suggested"
