@@ -99,3 +99,7 @@
     fill: white !important;
     font-weight: bold !important;
 }
+
+.gantt-container .upper-text {
+    color: white
+}
