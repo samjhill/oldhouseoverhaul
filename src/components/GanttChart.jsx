@@ -29,7 +29,7 @@ const GanttChart = ({ tasks }) => {
     }
   }, [tasks]);
 
-  return <div ref={ganttRef} />;
+  return <div ref={ganttRef} className="gantt-target dark" />;
 };
 
 export default GanttChart;

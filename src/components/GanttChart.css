@@ -1,28 +1,97 @@
-.gantt-container {
-    background-color: #1e1e1e; /* Dark background */
+:root {
+    --g-bar-stroke-dark: #c6ccd2;
+    --g-border-color-dark: #616161;
+    --g-bar-color-dark: #616161;
+    --g-bg-dark: #3e3e3e;
+    --g-light-border-color-dark: #3e3e3e;
+    --g-text-muted-dark: #eee;
+    --g-text-light-dark: #ececec;
+    --g-text-color-dark: #f7f7f7;
+    --g-progress-color: #8a8aff;
 }
 
-.gantt-task .bar {
-    background-color: #4a90e2; /* Task bar color */
+.dark > .gantt-container .gantt {
+    & .grid-row {
+        fill: #252525;
+    }
+
+    & .row-line {
+        stroke: var(--g-light-border-color-dark);
+    }
+
+    & .tick {
+        stroke: var(--g-border-color-dark);
+    }
+
+    & .arrow {
+        stroke: var(--g-text-muted-dark);
+    }
+
+    & .bar {
+        fill: var(--g-bar-color-dark);
+        stroke: none;
+    }
+
+    & .bar-progress {
+        fill: var(--g-progress-color);
+    }
+
+    & .bar-invalid {
+        fill: transparent;
+        stroke: var(--g-bar-stroke-dark);
+
+        & ~ .bar-label {
+            fill: var(--g-text-light-dark);
+        }
+    }
+
+    & .bar-label.big {
+        fill: var(--g-text-light-dark);
+    }
+
+    & .bar-wrapper {
+        &:hover {
+            .bar {
+                fill: lighten(var(--g-bar-color-dark, 5));
+            }
+
+            & .bar-progress {
+                fill: lighten(var(--g-progress-color, 5));
+            }
+        }
+
+        &.active {
+            .bar {
+                fill: lighten(var(--g-bar-color-dark, 5));
+            }
+
+            & .bar-progress {
+                fill: lighten(var(--g-progress-color, 5));
+            }
+        }
+    }
 }
 
-.gantt-task .bar .task-name {
-    color: #fff; /* White task name */
+.dark > .gantt-container {
+    & .grid-header {
+        background-color: #252525;
+    }
+
+    & .popup-wrapper {
+        background-color: #333;
+
+        & .title {
+            border-color: lighten(var(--g-progress-color, 5));
+        }
+    }
 }
 
-.gantt-header .cell {
-    background-color: #333; /* Dark header */
-    color: #fff; /* White text for header */
+.holiday-highlight {
+    fill: #1b1919 !important;
 }
 
-.gantt-task-label {
-    color: #fff; /* White label text */
+.gantt-container .current-upper {
+    background: #1b1919 !important;
+    color: white
 }
 
-.gantt-grid {
-    border-color: #555; /* Lighter borders */
-}
-
-.gantt-time-axis .axis-label {
-    color: #fff; /* White axis labels */
-}

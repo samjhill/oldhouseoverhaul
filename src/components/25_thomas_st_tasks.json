@@ -36,16 +36,16 @@
     "owner": "Cris Matos"
   },
   {
-    "name": "Rough Electrical",
+    "name": "HVAC",
     "start": "2025-05-26",
     "end": "2025-06-04",
     "progress": 0,
     "owner": "Cris Matos"
   },
   {
-    "name": "HVAC",
+    "name": "Rough Electrical", 
     "start": "2025-06-05",
-    "end": "2025-06-07",
+    "end": "2025-06-07", 
     "progress": 0,
     "owner": "Cris Matos"
   },
