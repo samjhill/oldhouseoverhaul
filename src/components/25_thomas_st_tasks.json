@@ -1,162 +1,231 @@
 [
   {
-    "id": "basement",
-    "name": "Basement",
-    "start": "2025-04-28",
-    "end": "2025-05-08",
-    "progress": 25,
-    "group": true
-  },
-  {
-    "id": "demo",
-    "name": "Demolition",
-    "start": "2025-05-09",
-    "end": "2025-05-17",
+    "name": "Framing",
+    "start": "2025-05-01",
+    "end": "2025-05-03",
     "progress": 0,
-    "group": true
+    "owner": "Cris Matos"
   },
   {
-    "id": "clear-basement",
-    "name": "Clear out basement",
-    "start": "2025-05-09",
+    "name": "Roofing",
+    "start": "2025-05-04",
     "end": "2025-05-10",
-    "dependencies": [
-      "walkthrough"
-    ],
     "progress": 0,
-    "group": false
+    "owner": "Cris Matos"
   },
   {
-    "id": "demo-floors",
-    "name": "Demo 1st floor",
-    "start": "2025-05-10",
-    "end": "2025-05-13",
-    "dependencies": [
-      "clear-basement"
-    ],
+    "name": "Exterior Walls",
+    "start": "2025-05-11",
+    "end": "2025-05-14",
     "progress": 0,
-    "group": false
+    "owner": "Cris Matos"
   },
   {
-    "id": "demo-floors",
-    "name": "Demo 2nd floor",
-    "start": "2025-05-14",
-    "end": "2025-05-17",
-    "dependencies": [
-      "clear-basement"
-    ],
+    "name": "🟨 Structural Inspection",
+    "start": "2025-05-15",
+    "end": "2025-05-15",
     "progress": 0,
-    "group": false
+    "owner": "Inspector",
+    "status": "suggested"
   },
   {
-    "id": "structure",
-    "name": "Structure",
-    "start": "2025-05-18",
-    "end": "2025-06-10",
+    "name": "Rough Plumbing",
+    "start": "2025-05-16",
+    "end": "2025-05-25",
     "progress": 0,
-    "group": true,
-    "dependencies": [
-      "demo"
-    ]
+    "owner": "Cris Matos"
   },
   {
-    "id": "addition-shell",
-    "name": "Build second-floor deck",
-    "start": "2025-05-18",
-    "end": "2025-05-28",
-    "dependencies": [
-      "basement-support"
-    ],
+    "name": "Rough Electrical",
+    "start": "2025-05-26",
+    "end": "2025-06-04",
     "progress": 0,
-    "group": false
+    "owner": "Cris Matos"
   },
   {
-    "id": "addition-shell",
-    "name": "Build second-floor addition",
-    "start": "2025-05-29",
-    "end": "2025-06-10",
-    "dependencies": [
-      "basement-support"
-    ],
-    "progress": 0,
-    "group": false
-  },
-  {
-    "id": "plumbing",
-    "name": "Plumbing",
-    "start": "2025-06-11",
-    "end": "2025-06-25",
-    "progress": 0,
-    "group": true,
-    "dependencies": [
-      "structure"
-    ]
-  },
-  {
-    "id": "rough-plumbing",
-    "name": "Rough-in plumbing",
-    "start": "2025-06-11",
-    "end": "2025-06-15",
-    "progress": 0,
-    "group": false
-  },
-  {
-    "id": "install-fixtures",
-    "name": "Install fixtures & hook-ups",
-    "start": "2025-06-16",
-    "end": "2025-06-20",
-    "dependencies": [
-      "rough-plumbing"
-    ],
-    "progress": 0,
-    "group": false
-  },
-  {
-    "id": "hvac",
     "name": "HVAC",
-    "start": "2025-06-25",
-    "end": "2025-07-14",
+    "start": "2025-06-05",
+    "end": "2025-06-07",
     "progress": 0,
-    "dependencies": ["plumbing"],
-    "group": true
+    "owner": "Cris Matos"
   },
   {
-    "id": "electrical",
-    "name": "Electrical",
+    "name": "🟨 Utility Rough-in Inspection",
+    "start": "2025-06-08",
+    "end": "2025-06-08",
+    "progress": 0,
+    "owner": "Inspector",
+    "status": "suggested"
+  },
+  {
+    "name": "Insulation",
+    "start": "2025-06-09",
+    "end": "2025-06-13",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Drywall",
+    "start": "2025-06-14",
+    "end": "2025-06-23",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Interior Painting",
+    "start": "2025-06-24",
+    "end": "2025-07-03",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Flooring",
+    "start": "2025-07-04",
+    "end": "2025-07-09",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Cabinets and Countertops",
+    "start": "2025-07-10",
+    "end": "2025-07-13",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Interior Trim",
     "start": "2025-07-14",
-    "end": "2025-07-30",
+    "end": "2025-07-17",
     "progress": 0,
-    "group": true,
-    "dependencies": ["hvac"]
+    "owner": "Cris Matos"
   },
   {
-    "id": "rough-electric",
-    "name": "Rough-in electrical",
-    "start": "2025-07-14",
-    "end": "2025-07-20",
+    "name": "Fixtures",
+    "start": "2025-07-18",
+    "end": "2025-07-19",
     "progress": 0,
-    "group": false
+    "owner": "Cris Matos"
   },
   {
-    "id": "install-lighting",
-    "name": "Install lighting & outlets",
+    "name": "Bathroom and Kitchen",
     "start": "2025-07-20",
-    "end": "2025-07-31",
-    "dependencies": [
-      "rough-electric"
-    ],
+    "end": "2025-08-11",
     "progress": 0,
-    "group": false
+    "owner": "Cris Matos"
   },
   {
-    "id": "finishes",
-    "name": "Finishes",
-    "start": "2025-08-01",
+    "name": "Siding",
+    "start": "2025-08-12",
     "end": "2025-08-30",
-    "dependencies": [
-      "rough-electric"
-    ],
     "progress": 0,
-    "group": false
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Painting",
+    "start": "2025-08-31",
+    "end": "2025-09-04",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Landscaping",
+    "start": "2025-09-05",
+    "end": "2025-09-14",
+    "progress": 0,
+    "owner": "Sam Hill"
+  },
+  {
+    "name": "Final Plumbing",
+    "start": "2025-09-15",
+    "end": "2025-09-23",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Final Electrical",
+    "start": "2025-09-24",
+    "end": "2025-10-02",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "HVAC Completion",
+    "start": "2025-10-03",
+    "end": "2025-10-03",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Building Inspection",
+    "start": "2025-10-04",
+    "end": "2025-10-04",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Obtain Certificate of Occupancy",
+    "start": "2025-10-05",
+    "end": "2025-10-05",
+    "progress": 0,
+    "owner": "Ashley Platt"
+  },
+  {
+    "name": "Post-Construction Cleanup",
+    "start": "2025-10-06",
+    "end": "2025-10-10",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Final Walkthrough",
+    "start": "2025-10-11",
+    "end": "2025-10-11",
+    "progress": 0,
+    "owner": "Cris Matos"
+  },
+  {
+    "name": "Final Payments",
+    "start": "2025-10-12",
+    "end": "2025-10-12",
+    "progress": 0,
+    "owner": "Sam Hill"
+  },
+  {
+    "name": "Warranty Documentation",
+    "start": "2025-10-13",
+    "end": "2025-10-13",
+    "progress": 0,
+    "owner": "Ashley Platt"
+  },
+  {
+    "name": "Project Documentation",
+    "start": "2025-10-13",
+    "end": "2025-10-13",
+    "progress": 0,
+    "owner": "Ashley Platt"
+  },
+  {
+    "name": "🟦 Dumpster delivery & placement",
+    "start": "2025-04-30",
+    "end": "2025-04-30",
+    "progress": 100,
+    "owner": "Sam Hill",
+    "type": "logistics"
+  },
+  {
+    "name": "🟦 Material staging/ordering window",
+    "start": "2025-04-28",
+    "end": "2025-05-05",
+    "progress": 100,
+    "owner": "Ashley Platt",
+    "type": "logistics"
+  },
+  {
+    "name": "🟦 Coordinate inspections with township",
+    "start": "2025-05-15",
+    "end": "2025-10-05",
+    "progress": 0,
+    "owner": "Ashley Platt",
+    "type": "logistics"
   }
 ]

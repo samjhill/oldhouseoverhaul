@@ -1,0 +1,28 @@
+.gantt-container {
+    background-color: #1e1e1e; /* Dark background */
+}
+
+.gantt-task .bar {
+    background-color: #4a90e2; /* Task bar color */
+}
+
+.gantt-task .bar .task-name {
+    color: #fff; /* White task name */
+}
+
+.gantt-header .cell {
+    background-color: #333; /* Dark header */
+    color: #fff; /* White text for header */
+}
+
+.gantt-task-label {
+    color: #fff; /* White label text */
+}
+
+.gantt-grid {
+    border-color: #555; /* Lighter borders */
+}
+
+.gantt-time-axis .axis-label {
+    color: #fff; /* White axis labels */
+}
