@@ -238,32 +238,5 @@
     "duration_in_days":1,
     "progress": 0,
     "owner": "Ashley Platt"
-  },
-  {
-    "name": "Dumpster delivery & placement",
-    "start": "2025-04-30",
-    "end": "2025-04-30",
-    "duration_in_days":1,
-    "progress": 100,
-    "owner": "Sam Hill",
-    "type": "logistics"
-  },
-  {
-    "name": "Material staging/ordering window",
-    "start": "2025-04-28",
-    "end": "2025-05-05",
-    "duration_in_days":1,
-    "progress": 100,
-    "owner": "Ashley Platt",
-    "type": "logistics"
-  },
-  {
-    "name": "Coordinate inspections with township",
-    "start": "2025-05-15",
-    "end": "2025-10-05",
-    "duration_in_days":1,
-    "progress": 0,
-    "owner": "Ashley Platt",
-    "type": "logistics"
   }
 ]
