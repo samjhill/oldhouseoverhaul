@@ -1,15 +1,23 @@
 [
   {
     "name": "Permits",
-    "start": "2025-04-25",
-    "end": "2025-05-01",
+    "duration_in_days":1,
     "progress": 100,
     "owner": "Ashley Platt"
   },
   {
+    "name": "Demolition",
+    "start": "2025-05-20",
+    "end": "2025-06-01",
+    "duration_in_days":1,
+    "progress": 0,
+    "owner": "Ashley Platt"
+  },
+  {
     "name": "Framing",
-    "start": "2025-05-01",
-    "end": "2025-05-03",
+    "start": "2025-06-02",
+    "end": "2025-06-05",
+    "duration_in_days": 2,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -17,20 +25,15 @@
     "name": "Roofing",
     "start": "2025-05-04",
     "end": "2025-05-10",
+    "duration_in_days": 4,
     "progress": 0,
     "owner": "Cris Matos"
   },
   {
-    "name": "Exterior Walls",
-    "start": "2025-05-11",
-    "end": "2025-05-14",
-    "progress": 0,
-    "owner": "Cris Matos"
-  },
-  {
-    "name": "🟨 Structural Inspection",
+    "name": "Structural Inspection",
     "start": "2025-05-15",
     "end": "2025-05-17",
+    "duration_in_days": 3,
     "progress": 0,
     "owner": "Inspector",
     "status": "suggested"
@@ -39,6 +42,7 @@
     "name": "Rough Plumbing",
     "start": "2025-05-16",
     "end": "2025-05-25",
+    "duration_in_days": 14,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -46,6 +50,7 @@
     "name": "HVAC",
     "start": "2025-05-26",
     "end": "2025-06-04",
+    "duration_in_days": 14,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -53,13 +58,15 @@
     "name": "Rough Electrical", 
     "start": "2025-06-05",
     "end": "2025-06-07", 
+    "duration_in_days": 14,
     "progress": 0,
     "owner": "Cris Matos"
   },
   {
-    "name": "🟨 Utility Rough-in Inspection",
+    "name": "Utility Rough-in Inspection",
     "start": "2025-06-08",
     "end": "2025-06-08",
+    "duration_in_days": 3,
     "progress": 0,
     "owner": "Inspector",
     "status": "suggested"
@@ -68,6 +75,7 @@
     "name": "Insulation",
     "start": "2025-06-09",
     "end": "2025-06-13",
+    "duration_in_days": 3,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -75,6 +83,7 @@
     "name": "Drywall",
     "start": "2025-06-14",
     "end": "2025-06-23",
+    "duration_in_days": 8,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -82,6 +91,7 @@
     "name": "Interior Painting",
     "start": "2025-06-24",
     "end": "2025-07-03",
+    "duration_in_days": 7,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -89,6 +99,7 @@
     "name": "Flooring",
     "start": "2025-07-04",
     "end": "2025-07-09",
+    "duration_in_days": 4,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -96,6 +107,7 @@
     "name": "Cabinets and Countertops",
     "start": "2025-07-10",
     "end": "2025-07-13",
+    "duration_in_days": 3,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -103,6 +115,7 @@
     "name": "Interior Trim",
     "start": "2025-07-14",
     "end": "2025-07-17",
+    "duration_in_days": 2,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -110,6 +123,7 @@
     "name": "Fixtures",
     "start": "2025-07-18",
     "end": "2025-07-19",
+    "duration_in_days": 1,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -117,6 +131,7 @@
     "name": "Bathroom and Kitchen",
     "start": "2025-07-20",
     "end": "2025-08-11",
+    "duration_in_days": 20,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -124,13 +139,15 @@
     "name": "Siding",
     "start": "2025-08-12",
     "end": "2025-08-30",
+    "duration_in_days": 15,
     "progress": 0,
     "owner": "Cris Matos"
   },
   {
-    "name": "Painting",
+    "name": "Exterior Painting",
     "start": "2025-08-31",
     "end": "2025-09-04",
+    "duration_in_days": 5,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -138,6 +155,7 @@
     "name": "Landscaping",
     "start": "2025-09-05",
     "end": "2025-09-14",
+    "duration_in_days": 10,
     "progress": 0,
     "owner": "Sam Hill"
   },
@@ -145,6 +163,7 @@
     "name": "Final Plumbing",
     "start": "2025-09-15",
     "end": "2025-09-23",
+    "duration_in_days": 7,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -152,6 +171,7 @@
     "name": "Final Electrical",
     "start": "2025-09-24",
     "end": "2025-10-02",
+    "duration_in_days": 7,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -159,6 +179,7 @@
     "name": "HVAC Completion",
     "start": "2025-10-03",
     "end": "2025-10-03",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -166,6 +187,7 @@
     "name": "Building Inspection",
     "start": "2025-10-04",
     "end": "2025-10-04",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -173,6 +195,7 @@
     "name": "Obtain Certificate of Occupancy",
     "start": "2025-10-05",
     "end": "2025-10-05",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Ashley Platt"
   },
@@ -180,6 +203,7 @@
     "name": "Post-Construction Cleanup",
     "start": "2025-10-06",
     "end": "2025-10-10",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -187,6 +211,7 @@
     "name": "Final Walkthrough",
     "start": "2025-10-11",
     "end": "2025-10-11",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Cris Matos"
   },
@@ -194,6 +219,7 @@
     "name": "Final Payments",
     "start": "2025-10-12",
     "end": "2025-10-12",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Sam Hill"
   },
@@ -201,6 +227,7 @@
     "name": "Warranty Documentation",
     "start": "2025-10-13",
     "end": "2025-10-13",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Ashley Platt"
   },
@@ -208,29 +235,33 @@
     "name": "Project Documentation",
     "start": "2025-10-13",
     "end": "2025-10-13",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Ashley Platt"
   },
   {
-    "name": "🟦 Dumpster delivery & placement",
+    "name": "Dumpster delivery & placement",
     "start": "2025-04-30",
     "end": "2025-04-30",
+    "duration_in_days":1,
     "progress": 100,
     "owner": "Sam Hill",
     "type": "logistics"
   },
   {
-    "name": "🟦 Material staging/ordering window",
+    "name": "Material staging/ordering window",
     "start": "2025-04-28",
     "end": "2025-05-05",
+    "duration_in_days":1,
     "progress": 100,
     "owner": "Ashley Platt",
     "type": "logistics"
   },
   {
-    "name": "🟦 Coordinate inspections with township",
+    "name": "Coordinate inspections with township",
     "start": "2025-05-15",
     "end": "2025-10-05",
+    "duration_in_days":1,
     "progress": 0,
     "owner": "Ashley Platt",
     "type": "logistics"

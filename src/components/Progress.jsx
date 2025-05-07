@@ -5,6 +5,26 @@ import tasks from "./25_thomas_st_tasks.json";
 function Progress() {
   const [showChart, setShowChart] = useState(false);
 
+  const projectStart = new Date("2025-05-07");
+  
+  let currentDayOffset = 0;
+  const tasksWithDates = tasks.map(task => {
+    const start = new Date(projectStart);
+    start.setDate(start.getDate() + currentDayOffset);
+  
+    const end = new Date(start);
+    end.setDate(start.getDate() + task.duration_in_days);
+  
+    currentDayOffset += task.duration_in_days;
+  
+    return {
+      ...task,
+      start: start.toISOString().split('T')[0],
+      end: end.toISOString().split('T')[0]
+    };
+  });
+  
+
   return (
     <div className="p-4">
       
@@ -23,7 +43,7 @@ function Progress() {
         <p style={{marginLeft: "1rem"}}>Here's a Gantt chart that shows our current construction progress and estimated timelines for various steps.</p>
         <button style={{marginLeft: "1rem"}} onClick={() => setShowChart(!showChart)}>{showChart ? "hide" : "show"} chart</button>
         {showChart && (
-          <GanttChart tasks={tasks} />
+          <GanttChart tasks={tasksWithDates} />
         )}
       </div>
     </div>
