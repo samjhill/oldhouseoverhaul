@@ -11,6 +11,38 @@ import headshot from "./assets/images/headshot.jpg"
 function App() {
     return (
         <>
+            <section>
+                <p>
+                    Proof of Consent (Opt-In)
+
+                    Consumer-Initiated Consent to Receive SMS Communications via Twilio
+
+                    This document serves as proof that the following consumer has given explicit, verifiable consent to receive SMS communications from OLD HOUSE OVERHAUL LLC through the Twilio platform.
+
+                    Consent Method:
+                    The consumer initiated contact by sending an SMS message to our Twilio number, which contained a link to a home listing for evaluation (e.g., a Redfin or Zillow URL). This action clearly indicates interest and serves as opt-in to receive SMS responses related to the home evaluation service.
+
+                    By initiating the message, the consumer has agreed to receive the following types of communication:
+
+                    Automated SMS responses with property analysis and evaluation results
+
+                    Follow-up messages relevant to the property or service requested
+
+                    An option to opt-out by replying STOP at any time
+
+                    Business Contact Information:
+
+                    Business Name: OLD HOUSE OVERHAUL LLC
+
+                    Twilio Number: (877) 754-1288
+
+                    Contact Email: samuhill@gmail.com
+
+                    Retention Policy:
+                    This opt-in record (including the original message content and timestamp) is securely stored in our system logs and can be produced upon request to demonstrate compliance with carrier and regulatory requirements.
+
+                </p>
+            </section>
             <header className="header">
                 <img src={logo} alt="Old House Overhaul Logo" className="logo" />
                 <h3 style={{ fontStyle: "italic" }}>Restoring the Past; Building the Future</h3>
