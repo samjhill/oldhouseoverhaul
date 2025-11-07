@@ -14,6 +14,15 @@
       "blocking": false
     },
     {
+      "id": "order-hardwood",
+      "task": "Order engineered hardwood",
+      "responsible": "Sam Hill",
+      "notes": "Place flooring order; 5-week lead so material acclimates before install.",
+      "duration_days": 1,
+      "start_offset_days": -10,
+      "blocking": false
+    },
+    {
       "id": "order-tile",
       "task": "Order bath & laundry tile",
       "responsible": "Sam Hill",
@@ -23,12 +32,12 @@
       "blocking": false
     },
     {
-      "id": "order-hardwood",
-      "task": "Order engineered hardwood",
+      "id": "order-vanities",
+      "task": "Order vanities & tops",
       "responsible": "Sam Hill",
-      "notes": "Place flooring order; 5-week lead so material acclimates before install.",
+      "notes": "Approve shop drawings and stone templates; 6-week lead.",
       "duration_days": 1,
-      "start_offset_days": -10,
+      "start_offset_days": -7,
       "blocking": false
     },
     {
@@ -47,15 +56,6 @@
       "notes": "Release fixture schedule; allow 4-week lead for specialty pendants.",
       "duration_days": 1,
       "start_offset_days": -5,
-      "blocking": false
-    },
-    {
-      "id": "order-vanities",
-      "task": "Order vanities & tops",
-      "responsible": "Sam Hill",
-      "notes": "Approve shop drawings and stone templates; 6-week lead.",
-      "duration_days": 1,
-      "start_offset_days": -7,
       "blocking": false
     },
     {
