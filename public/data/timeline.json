@@ -6,6 +6,60 @@
   "description": "A snapshot of where the renovation stands right now. Track each milestone to see who is leading the effort and how the job is pacing toward completion.",
   "tasks": [
     {
+      "id": "order-cabinets",
+      "task": "Order kitchen & bath cabinets",
+      "responsible": "Sam Hill",
+      "notes": "Release cabinet package; 8-week lead to sync with mid-Jan install.",
+      "duration_days": 1,
+      "start_offset_days": -21,
+      "blocking": false
+    },
+    {
+      "id": "order-tile",
+      "task": "Order bath & laundry tile",
+      "responsible": "Sam Hill",
+      "notes": "Confirm square footage and trims; 5-week lead before tile backer/setting.",
+      "duration_days": 1,
+      "start_offset_days": -7,
+      "blocking": false
+    },
+    {
+      "id": "order-hardwood",
+      "task": "Order engineered hardwood",
+      "responsible": "Sam Hill",
+      "notes": "Place flooring order; 5-week lead so material acclimates before install.",
+      "duration_days": 1,
+      "start_offset_days": -10,
+      "blocking": false
+    },
+    {
+      "id": "order-plumbing-fixtures",
+      "task": "Order plumbing fixtures",
+      "responsible": "Sam Hill",
+      "notes": "Verify finish selections and rough-in valve trim; 4-week lead.",
+      "duration_days": 1,
+      "start_offset_days": -5,
+      "blocking": false
+    },
+    {
+      "id": "order-lighting",
+      "task": "Order lighting package",
+      "responsible": "Sam Hill",
+      "notes": "Release fixture schedule; allow 4-week lead for specialty pendants.",
+      "duration_days": 1,
+      "start_offset_days": -5,
+      "blocking": false
+    },
+    {
+      "id": "order-vanities",
+      "task": "Order vanities & tops",
+      "responsible": "Sam Hill",
+      "notes": "Approve shop drawings and stone templates; 6-week lead.",
+      "duration_days": 1,
+      "start_offset_days": -7,
+      "blocking": false
+    },
+    {
       "id": "finish-1f-subfloors",
       "task": "Finish 1st-floor subfloors",
       "responsible": "Cris",

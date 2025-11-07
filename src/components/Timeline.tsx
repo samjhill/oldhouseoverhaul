@@ -19,6 +19,7 @@ type ScheduledTimelineTask = RawTimeline["tasks"][number] & {
   displayDate: string;
   isMultiDay: boolean;
   isHighlighted: boolean;
+  isBlocking: boolean;
 };
 
 const toISODate = (value: Date) => value.toISOString().split("T")[0];
@@ -80,6 +81,7 @@ const deriveSchedule = (timeline: RawTimeline): ScheduledTimelineTask[] => {
     const durationDays = normalizeDuration(task.duration_days, 1);
     const gapAfterDays = normalizeGap(task.gap_after_days);
     const offset = normalizeOffset(task.start_offset_days);
+    const isBlocking = task.blocking !== false;
 
     let start = new Date(cursor);
 
@@ -94,7 +96,9 @@ const deriveSchedule = (timeline: RawTimeline): ScheduledTimelineTask[] => {
 
     const nextCursor = new Date(start);
     nextCursor.setDate(start.getDate() + durationDays + gapAfterDays);
-    cursor = nextCursor;
+    if (isBlocking && nextCursor.getTime() > cursor.getTime()) {
+      cursor = nextCursor;
+    }
 
     const isMultiDay = durationDays > 1;
     const displayDate = isMultiDay ? formatRange(start, end) : formatSingleDate(start);
@@ -110,6 +114,7 @@ const deriveSchedule = (timeline: RawTimeline): ScheduledTimelineTask[] => {
       displayDate,
       isMultiDay,
       isHighlighted: Boolean(task.highlight),
+      isBlocking,
     };
   });
 };

@@ -11,6 +11,7 @@ export type RawTimelineTask = {
   gap_after_days?: number;
   start_offset_days?: number;
   highlight?: boolean;
+  blocking?: boolean;
 };
 
 export type RawTimeline = {
