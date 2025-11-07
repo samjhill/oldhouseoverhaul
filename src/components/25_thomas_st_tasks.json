@@ -1,248 +1,252 @@
 [
   {
+    "id": "permits",
     "name": "Permits",
-    "duration_in_days":1,
+    "duration_in_days": 1,
     "progress": 100,
-    "owner": "Ashley Platt"
+    "owner": "Ashley Platt",
+    "category": "Pre-Construction"
   },
   {
+    "id": "basement",
     "name": "Basement",
-    "duration_in_days":4,
+    "duration_in_days": 4,
     "progress": 80,
-    "owner": "Ashley Platt"
+    "owner": "Ashley Platt",
+    "category": "Structural"
   },
   {
+    "id": "demolition",
     "name": "Demolition",
-    "start": "2025-05-20",
-    "end": "2025-06-01",
     "duration_in_days": 5,
     "progress": 0,
-    "owner": "Ashley Platt"
+    "owner": "Ashley Platt",
+    "category": "Structural"
   },
   {
+    "id": "framing",
     "name": "Framing",
-    "start": "2025-06-02",
-    "end": "2025-06-05",
     "duration_in_days": 2,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Structural"
   },
   {
+    "id": "roofing",
     "name": "Roofing",
-    "start": "2025-05-04",
-    "end": "2025-05-10",
     "duration_in_days": 4,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Exterior"
   },
   {
+    "id": "structural-inspection",
     "name": "Structural Inspection",
-    "start": "2025-05-15",
-    "end": "2025-05-17",
     "duration_in_days": 3,
     "progress": 0,
     "owner": "Inspector",
-    "status": "suggested"
+    "status": "suggested",
+    "category": "Inspection"
   },
   {
+    "id": "rough-plumbing",
     "name": "Rough Plumbing",
-    "start": "2025-05-16",
-    "end": "2025-05-25",
     "duration_in_days": 14,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Rough-In"
   },
   {
+    "id": "hvac",
     "name": "HVAC",
-    "start": "2025-05-26",
-    "end": "2025-06-04",
     "duration_in_days": 14,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Rough-In"
   },
   {
-    "name": "Rough Electrical", 
-    "start": "2025-06-05",
-    "end": "2025-06-07", 
+    "id": "rough-electrical",
+    "name": "Rough Electrical",
     "duration_in_days": 14,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Rough-In"
   },
   {
+    "id": "utility-inspection",
     "name": "Utility Rough-in Inspection",
-    "start": "2025-06-08",
-    "end": "2025-06-08",
     "duration_in_days": 3,
     "progress": 0,
     "owner": "Inspector",
-    "status": "suggested"
+    "status": "suggested",
+    "category": "Inspection"
   },
   {
+    "id": "insulation",
     "name": "Insulation",
-    "start": "2025-06-09",
-    "end": "2025-06-13",
     "duration_in_days": 3,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Interiors"
   },
   {
+    "id": "drywall",
     "name": "Drywall",
-    "start": "2025-06-14",
-    "end": "2025-06-23",
     "duration_in_days": 8,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Interiors"
   },
   {
+    "id": "interior-painting",
     "name": "Interior Painting",
-    "start": "2025-06-24",
-    "end": "2025-07-03",
     "duration_in_days": 7,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Finishes"
   },
   {
+    "id": "flooring",
     "name": "Flooring",
-    "start": "2025-07-04",
-    "end": "2025-07-09",
     "duration_in_days": 4,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Finishes"
   },
   {
+    "id": "cabinets",
     "name": "Cabinets and Countertops",
-    "start": "2025-07-10",
-    "end": "2025-07-13",
     "duration_in_days": 3,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Finishes"
   },
   {
+    "id": "interior-trim",
     "name": "Interior Trim",
-    "start": "2025-07-14",
-    "end": "2025-07-17",
     "duration_in_days": 2,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Finishes"
   },
   {
+    "id": "fixtures",
     "name": "Fixtures",
-    "start": "2025-07-18",
-    "end": "2025-07-19",
     "duration_in_days": 1,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Finishes"
   },
   {
+    "id": "bath-kitchen",
     "name": "Bathroom and Kitchen",
-    "start": "2025-07-20",
-    "end": "2025-08-11",
     "duration_in_days": 20,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Finishes"
   },
   {
-    "name": "Final Plumbing",
-    "start": "2025-09-15",
-    "end": "2025-09-23",
-    "duration_in_days": 7,
-    "progress": 0,
-    "owner": "Cris Matos"
-  },
-  {
-    "name": "Final Electrical",
-    "start": "2025-09-24",
-    "end": "2025-10-02",
-    "duration_in_days": 7,
-    "progress": 0,
-    "owner": "Cris Matos"
-  },
-  {
-    "name": "HVAC Completion",
-    "start": "2025-10-03",
-    "end": "2025-10-03",
-    "duration_in_days":1,
-    "progress": 0,
-    "owner": "Cris Matos"
-  },
-  {
-    "name": "Building Inspection",
-    "start": "2025-10-04",
-    "end": "2025-10-04",
-    "duration_in_days":1,
-    "progress": 0,
-    "owner": "Cris Matos"
-  },
-  {
-    "name": "Obtain Certificate of Occupancy",
-    "start": "2025-10-05",
-    "end": "2025-10-05",
-    "duration_in_days":1,
-    "progress": 0,
-    "owner": "Ashley Platt"
-  },
-  {
+    "id": "siding",
     "name": "Siding",
-    "start": "2025-08-12",
-    "end": "2025-08-30",
     "duration_in_days": 15,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Exterior"
   },
   {
+    "id": "exterior-painting",
     "name": "Exterior Painting",
-    "start": "2025-08-31",
-    "end": "2025-09-04",
     "duration_in_days": 5,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Exterior"
   },
   {
+    "id": "landscaping",
     "name": "Landscaping",
-    "start": "2025-09-05",
-    "end": "2025-09-14",
     "duration_in_days": 10,
     "progress": 0,
-    "owner": "Sam Hill"
+    "owner": "Sam Hill",
+    "category": "Exterior"
   },
   {
+    "id": "final-plumbing",
+    "name": "Final Plumbing",
+    "duration_in_days": 7,
+    "progress": 0,
+    "owner": "Cris Matos",
+    "category": "Closeout"
+  },
+  {
+    "id": "final-electrical",
+    "name": "Final Electrical",
+    "duration_in_days": 7,
+    "progress": 0,
+    "owner": "Cris Matos",
+    "category": "Closeout"
+  },
+  {
+    "id": "hvac-completion",
+    "name": "HVAC Completion",
+    "duration_in_days": 1,
+    "progress": 0,
+    "owner": "Cris Matos",
+    "category": "Closeout"
+  },
+  {
+    "id": "building-inspection",
+    "name": "Building Inspection",
+    "duration_in_days": 1,
+    "progress": 0,
+    "owner": "Cris Matos",
+    "category": "Inspection"
+  },
+  {
+    "id": "certificate-occupancy",
+    "name": "Obtain Certificate of Occupancy",
+    "duration_in_days": 1,
+    "progress": 0,
+    "owner": "Ashley Platt",
+    "category": "Closeout"
+  },
+  {
+    "id": "post-construction-cleanup",
     "name": "Post-Construction Cleanup",
-    "start": "2025-10-06",
-    "end": "2025-10-10",
-    "duration_in_days":1,
+    "duration_in_days": 1,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Closeout"
   },
   {
+    "id": "final-walkthrough",
     "name": "Final Walkthrough",
-    "start": "2025-10-11",
-    "end": "2025-10-11",
-    "duration_in_days":1,
+    "duration_in_days": 1,
     "progress": 0,
-    "owner": "Cris Matos"
+    "owner": "Cris Matos",
+    "category": "Closeout"
   },
   {
+    "id": "final-payments",
     "name": "Final Payments",
-    "start": "2025-10-12",
-    "end": "2025-10-12",
-    "duration_in_days":1,
+    "duration_in_days": 1,
     "progress": 0,
-    "owner": "Sam Hill"
+    "owner": "Sam Hill",
+    "category": "Closeout"
   },
   {
+    "id": "warranty-docs",
     "name": "Warranty Documentation",
-    "start": "2025-10-13",
-    "end": "2025-10-13",
-    "duration_in_days":1,
+    "duration_in_days": 1,
     "progress": 0,
-    "owner": "Ashley Platt"
+    "owner": "Ashley Platt",
+    "category": "Closeout"
   },
   {
+    "id": "project-docs",
     "name": "Project Documentation",
-    "start": "2025-10-13",
-    "end": "2025-10-13",
-    "duration_in_days":1,
+    "duration_in_days": 1,
     "progress": 0,
-    "owner": "Ashley Platt"
+    "owner": "Ashley Platt",
+    "category": "Closeout"
   }
 ]

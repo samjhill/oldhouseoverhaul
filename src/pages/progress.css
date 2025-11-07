@@ -1,0 +1,107 @@
+.progress-page {
+  min-height: 100vh;
+  padding: clamp(4rem, 6vw, 6rem) 1.5rem clamp(6rem, 8vw, 8rem);
+  background: radial-gradient(circle at top, rgba(209, 250, 229, 0.5), rgba(148, 163, 184, 0.15) 55%, rgba(14, 116, 144, 0.1) 100%),
+    linear-gradient(135deg, #f5faf8 0%, #ecf7f4 45%, #e2eef5 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.progress-container {
+  width: min(960px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.progress-header {
+  display: grid;
+  gap: 1.5rem;
+  text-align: left;
+  position: relative;
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.75rem);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.93);
+  box-shadow: 0 25px 65px rgba(15, 118, 110, 0.15);
+  border: 1px solid rgba(15, 118, 110, 0.12);
+  overflow: hidden;
+}
+
+.progress-header::before {
+  content: "";
+  position: absolute;
+  inset: auto -25% -50% auto;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.12), transparent 72%);
+  filter: blur(1px);
+  transform: rotate(12deg);
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #0f766e;
+}
+
+.progress-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #083344;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.progress-intro {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(15, 76, 64, 0.92);
+  margin: 0;
+  max-width: 48rem;
+}
+
+.progress-updated {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(12, 74, 64, 0.6);
+}
+
+.progress-error {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b91c1c;
+}
+
+@media (max-width: 720px) {
+  .progress-page {
+    padding: 3.5rem 1rem 5rem;
+  }
+
+  .progress-header {
+    text-align: left;
+    padding: 2rem 1.75rem;
+  }
+
+  .progress-intro {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .progress-header {
+    border-radius: 22px;
+  }
+
+  .progress-title {
+    font-size: 2rem;
+  }
+}
+
+

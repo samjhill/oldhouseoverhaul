@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Progress from "./components/Progress";
+import ProgressPage from "./pages/progress";
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
@@ -11,7 +11,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/progress" element={<Progress />} />
+        <Route path="/progress" element={<ProgressPage />} />
       </Routes>
       
       <footer className="footer">
