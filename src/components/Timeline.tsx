@@ -120,13 +120,12 @@ const deriveSchedule = (timeline: RawTimeline): ScheduledTimelineTask[] => {
 };
 
 const formatUpdatedLabel = (timestamp?: string) => {
-  if (!timestamp) {
-    return null;
-  }
+  const fallback = new Date();
+  const base = timestamp ?? fallback.toISOString().split("T")[0];
 
-  const parsed = new Date(`${timestamp}T00:00:00`);
+  const parsed = new Date(`${base}T00:00:00`);
   if (Number.isNaN(parsed.getTime())) {
-    return timestamp;
+    return base;
   }
 
   return parsed.toLocaleDateString("en-US", {

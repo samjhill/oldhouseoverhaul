@@ -4,13 +4,12 @@ import "./progress.css";
 import { useTimelineData } from "../hooks/useTimelineData";
 
 const formatUpdatedLabel = (timestamp?: string | null) => {
-  if (!timestamp) {
-    return null;
-  }
+  const fallback = new Date();
+  const base = timestamp ?? fallback.toISOString().split("T")[0];
 
-  const parsed = new Date(`${timestamp}T00:00:00`);
+  const parsed = new Date(`${base}T00:00:00`);
   if (Number.isNaN(parsed.getTime())) {
-    return timestamp;
+    return base;
   }
 
   return parsed.toLocaleDateString("en-US", {
