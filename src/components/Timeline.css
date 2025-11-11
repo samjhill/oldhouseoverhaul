@@ -150,6 +150,58 @@
   color: #92400e;
 }
 
+.timeline-item.completed-flag .timeline-card {
+  border-color: rgba(148, 163, 184, 0.35);
+  background: rgba(248, 250, 252, 0.92);
+  box-shadow: none;
+}
+
+.timeline-item.completed-flag .timeline-marker {
+  background: linear-gradient(135deg, #cbd5f5 0%, #94a3b8 100%);
+  box-shadow: 0 6px 20px rgba(148, 163, 184, 0.3);
+}
+
+.timeline-item.completed-flag .timeline-date,
+.timeline-item.completed-flag .timeline-task,
+.timeline-item.completed-flag .timeline-responsible {
+  color: #64748b;
+}
+
+.timeline-completed {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed rgba(148, 163, 184, 0.4);
+}
+
+.timeline-completed summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0f5139;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-completed summary::before {
+  content: "▸";
+  transition: transform 0.2s ease;
+  font-size: 0.9rem;
+  color: #0f5139;
+}
+
+.timeline-completed[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.timeline-completed summary::-webkit-details-marker {
+  display: none;
+}
+
 .timeline-top-row {
   display: flex;
   flex-direction: column;

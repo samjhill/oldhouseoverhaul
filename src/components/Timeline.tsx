@@ -20,6 +20,7 @@ type ScheduledTimelineTask = RawTimeline["tasks"][number] & {
   isMultiDay: boolean;
   isHighlighted: boolean;
   isBlocking: boolean;
+  isCompleted: boolean;
 };
 
 const toISODate = (value: Date) => value.toISOString().split("T")[0];
@@ -82,6 +83,7 @@ const deriveSchedule = (timeline: RawTimeline): ScheduledTimelineTask[] => {
     const gapAfterDays = normalizeGap(task.gap_after_days);
     const offset = normalizeOffset(task.start_offset_days);
     const isBlocking = task.blocking !== false;
+    const isCompleted = Boolean(task.completed);
 
     let start = new Date(cursor);
 
@@ -115,6 +117,7 @@ const deriveSchedule = (timeline: RawTimeline): ScheduledTimelineTask[] => {
       isMultiDay,
       isHighlighted: Boolean(task.highlight),
       isBlocking,
+      isCompleted,
     };
   });
 };
@@ -153,6 +156,21 @@ const Timeline: React.FC<TimelineProps> = (props) => {
     }
     return deriveSchedule(timeline);
   }, [timeline]);
+
+  const { activeTasks, completedTasks } = useMemo(() => {
+    const active: ScheduledTimelineTask[] = [];
+    const completedList: ScheduledTimelineTask[] = [];
+
+    scheduledTasks.forEach((task) => {
+      if (task.isCompleted) {
+        completedList.push(task);
+      } else {
+        active.push(task);
+      }
+    });
+
+    return { activeTasks: active, completedTasks: completedList };
+  }, [scheduledTasks]);
 
   const startOfToday = useMemo(() => {
     const today = new Date();
@@ -202,10 +220,10 @@ const Timeline: React.FC<TimelineProps> = (props) => {
         )}
 
         <div className="timeline-list">
-          {scheduledTasks.length === 0 ? (
-            <p className="timeline-empty">No tasks scheduled yet. Add tasks to timeline.json to see them here.</p>
+          {activeTasks.length === 0 ? (
+            <p className="timeline-empty">No upcoming tasks scheduled. Everything is marked complete!</p>
           ) : (
-            scheduledTasks.map((entry) => {
+            activeTasks.map((entry) => {
               const isComplete = entry.endDate.getTime() < startOfToday.getTime();
               const itemClasses = `timeline-item${isComplete ? " complete" : ""}${
                 entry.isHighlighted ? " highlight" : ""
@@ -235,6 +253,43 @@ const Timeline: React.FC<TimelineProps> = (props) => {
             })
           )}
         </div>
+
+        {completedTasks.length > 0 && (
+          <details className="timeline-completed">
+            <summary>
+              Completed ({completedTasks.length})
+            </summary>
+            <div className="timeline-list">
+              {completedTasks.map((entry) => {
+                const itemClasses = `timeline-item completed-flag${
+                  entry.isHighlighted ? " highlight" : ""
+                }`;
+                const key = entry.id ?? `${entry.task}-${entry.index}-completed`;
+
+                return (
+                  <div key={key} className={itemClasses}>
+                    <span className="timeline-marker" />
+                    <div className="timeline-card">
+                      <div className="timeline-top-row">
+                        <span className="timeline-date">{entry.displayDate}</span>
+                        <span className="timeline-responsible">{entry.responsible}</span>
+                      </div>
+                      <p className="timeline-task">{entry.task}</p>
+                      {entry.isMultiDay && (
+                        <div className="timeline-meta">
+                          <span className="timeline-duration">
+                            {entry.durationDays} {entry.durationDays === 1 ? "day" : "days"}
+                          </span>
+                        </div>
+                      )}
+                      <p className="timeline-notes">{entry.notes}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </details>
+        )}
       </div>
     </section>
   );

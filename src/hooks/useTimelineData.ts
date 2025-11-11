@@ -12,6 +12,7 @@ export type RawTimelineTask = {
   start_offset_days?: number;
   highlight?: boolean;
   blocking?: boolean;
+  completed?: boolean;
 };
 
 export type RawTimeline = {

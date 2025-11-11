@@ -11,7 +11,8 @@
       "notes": "Release cabinet package; 8-week lead to sync with mid-Jan install.",
       "duration_days": 1,
       "start_offset_days": -21,
-      "blocking": false
+      "blocking": false,
+      "completed": false
     },
     {
       "id": "order-hardwood",
@@ -20,7 +21,8 @@
       "notes": "Place flooring order; 5-week lead so material acclimates before install.",
       "duration_days": 1,
       "start_offset_days": -10,
-      "blocking": false
+      "blocking": false,
+      "completed": false
     },
     {
       "id": "order-tile",
@@ -29,7 +31,8 @@
       "notes": "Confirm square footage and trims; 5-week lead before tile backer/setting.",
       "duration_days": 1,
       "start_offset_days": -7,
-      "blocking": false
+      "blocking": false,
+      "completed": false
     },
     {
       "id": "order-vanities",
@@ -38,7 +41,8 @@
       "notes": "Approve shop drawings and stone templates; 6-week lead.",
       "duration_days": 1,
       "start_offset_days": -7,
-      "blocking": false
+      "blocking": false,
+      "completed": false
     },
     {
       "id": "order-plumbing-fixtures",
@@ -47,7 +51,8 @@
       "notes": "Verify finish selections and rough-in valve trim; 4-week lead.",
       "duration_days": 1,
       "start_offset_days": -5,
-      "blocking": false
+      "blocking": false,
+      "completed": false
     },
     {
       "id": "order-lighting",
@@ -56,91 +61,104 @@
       "notes": "Release fixture schedule; allow 4-week lead for specialty pendants.",
       "duration_days": 1,
       "start_offset_days": -5,
-      "blocking": false
+      "blocking": false,
+      "completed": false
     },
     {
       "id": "finish-1f-subfloors",
       "task": "Finish 1st-floor subfloors",
       "responsible": "Cris",
       "notes": "Glue + screw; check for squeaks and levelness.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": true
     },
     {
       "id": "hvac-piping",
       "task": "Plumber connects HVAC piping",
       "responsible": "Plumber",
       "notes": "Condensate, gas, and hydronic tie-ins.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": true
     },
     {
       "id": "vent-penetrations",
       "task": "Finalize HVAC and cut roof vent penetrations",
       "responsible": "Paulo",
       "notes": "Flash vent openings, seal roof penetrations.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": true
     },
     {
       "id": "install-2f-subfloors",
       "task": "Install 2nd-floor subfloors",
       "responsible": "GC + Crew",
       "notes": "Confirm screw schedule and blocking.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": true
     },
     {
       "id": "cleanup-inspection-prep",
       "task": "Full jobsite cleanup and inspection prep",
       "responsible": "Team",
       "notes": "Clear pathways, label circuits, ready permit log.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": true
     },
     {
       "id": "electrical-rough-in-inspection",
       "task": "Electrical rough-in inspection",
       "responsible": "Township Inspector",
       "notes": "Permit card and drawings on-site.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "install-staircase",
       "task": "Install staircase",
       "responsible": "Cris + Carpenter",
       "notes": "Verify tread/riser dimensions and add temporary guardrail.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "framing-structural-inspection",
       "task": "Framing / Structural inspection",
       "responsible": "Building Inspector",
       "notes": "Include new stair framing and fire blocking.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "fire-rough-inspection",
       "task": "Fire rough inspection",
       "responsible": "Fire Marshal",
       "notes": "Coordinate same day as framing if possible.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "punchlist-corrections",
       "task": "Correct any punch-list items from rough inspections",
       "responsible": "GC + Subs",
       "notes": "Minor fixes before insulation phase.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "apply-mold-armor",
       "task": "Apply Mold Armor / Concrobium",
       "responsible": "GC + Team",
       "notes": "Coat framing, subfloors, and bath cavities.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "begin-insulation",
       "task": "Begin insulation install",
       "responsible": "Insulation Sub",
       "notes": "Batts in walls and ceilings; spray foam in baths.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "insulation-inspection",
@@ -148,14 +166,16 @@
       "responsible": "Building Dept.",
       "notes": "Required before drywall installation.",
       "duration_days": 1,
-      "gap_after_days": 1
+      "gap_after_days": 1,
+      "completed": false
     },
     {
       "id": "material-delivery-check",
       "task": "Jobsite cleanup and material delivery check",
       "responsible": "Team",
       "notes": "Prep for drywall after Thanksgiving.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "install-windows",
@@ -164,147 +184,168 @@
       "notes": "Delivery scheduled 12/4; check flashing, integrate pan flashing, and insulate around frames.",
       "duration_days": 2,
       "gap_after_days": 1,
-      "start_offset_days": 28
+      "start_offset_days": 28,
+      "completed": false
     },
     {
       "id": "window-punch",
       "task": "Window punch & weather-seal touch-ups",
       "responsible": "GC + Crew",
       "notes": "Verify shims, spray foam, and exterior sealant before drywall closes walls.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "begin-drywall",
       "task": "Begin drywall installation",
       "responsible": "Drywall Crew",
       "notes": "Start on 2nd floor, then main level.",
-      "duration_days": 4
+      "duration_days": 4,
+      "completed": false
     },
     {
       "id": "drywall-screw-inspection",
       "task": "Drywall screw inspection",
       "responsible": "Township Inspector",
       "notes": "Confirm board fastening and fire-rated assemblies prior to taping.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "taping-first-sanding",
       "task": "Taping and first sanding",
       "responsible": "Drywall Crew",
       "notes": "Allow 48 hours dry time before prime.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "prime-trim-layout",
       "task": "Prime coat and trim layout",
       "responsible": "GC + Painter",
       "notes": "Start window trim, prep sills.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "tile-backer",
       "task": "Install bathroom tile backer",
       "responsible": "Tile Sub",
       "notes": "Focus on master and basement baths.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "waterproofing-inspection",
       "task": "Shower waterproofing inspection",
       "responsible": "Building Dept.",
       "notes": "Flood test pans, document membrane coverage before tile goes up.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "tile-steam-shower",
       "task": "Tile steam shower",
       "responsible": "Tile Sub",
       "notes": "Ensure waterproofing inspection complete prior to tile.",
-      "duration_days": 3
+      "duration_days": 3,
+      "completed": false
     },
     {
       "id": "tile-grout",
       "task": "Grout & caulk wet areas",
       "responsible": "Tile Sub",
       "notes": "Grout steam shower and baths; silicone corners and plumbing penetrations.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "vanity-set",
       "task": "Set vanities & base cabinets",
       "responsible": "GC + Subs",
       "notes": "Secure bases, connect drains rough, confirm stone templates where needed.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "install-interior-trim",
       "task": "Install interior trim & doors",
       "responsible": "Finish Carpenter",
       "notes": "Casing, baseboard, window stools, pocket door hardware.",
-      "duration_days": 4
+      "duration_days": 4,
+      "completed": false
     },
     {
       "id": "paint-finish-coats",
       "task": "Paint finish coats",
       "responsible": "Painter",
       "notes": "Final wall & ceiling coats after trim install; touch-up primer as needed.",
-      "duration_days": 3
+      "duration_days": 3,
+      "completed": false
     },
     {
       "id": "hardwood-flooring",
       "task": "Install hardwood & stair treads",
       "responsible": "Flooring Sub",
       "notes": "Acclimate material, install, sand, and first coat of finish.",
-      "duration_days": 4
+      "duration_days": 4,
+      "completed": false
     },
     {
       "id": "install-cabinets",
       "task": "Install kitchen cabinets & countertops",
       "responsible": "Cabinet Installer",
       "notes": "Hang uppers, set lowers, coordinate countertop templating.",
-      "duration_days": 3
+      "duration_days": 3,
+      "completed": false
     },
     {
       "id": "install-plumbing-fixtures",
       "task": "Install plumbing fixtures",
       "responsible": "Plumber",
       "notes": "Set toilets, hook up vanities, install faucets and shower trim.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "install-lighting",
       "task": "Install lighting & devices",
       "responsible": "Electrician",
       "notes": "Fixtures, switches, dimmers, smart controls, and panel labeling.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "hvac-balancing",
       "task": "HVAC balancing & controls commissioning",
       "responsible": "HVAC Sub",
       "notes": "Balance airflows, commission thermostats, verify condensate pumps.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "punch-touchups",
       "task": "GC punch list & touch-ups",
       "responsible": "GC + Subs",
       "notes": "Blue-tape walkthrough, address paint nicks, adjust doors and hardware.",
-      "duration_days": 3
+      "duration_days": 3,
+      "completed": false
     },
     {
       "id": "final-clean",
       "task": "Final clean & polish",
       "responsible": "Cleaning Crew",
       "notes": "Construction clean, window washing, remove floor protection.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "final-inspections",
       "task": "Final building / trade inspections",
       "responsible": "Township Inspector",
       "notes": "Schedule building, electrical, plumbing, and fire finals back-to-back.",
-      "duration_days": 2
+      "duration_days": 2,
+      "completed": false
     },
     {
       "id": "temporary-co",
@@ -312,15 +353,16 @@
       "responsible": "Ashley Platt",
       "notes": "Submit signed inspection cards, pay fees, secure temp CO for move-in.",
       "duration_days": 1,
-      "highlight": true
+      "highlight": true,
+      "completed": false
     },
     {
       "id": "certificate-occupancy",
       "task": "Certificate of Occupancy",
       "responsible": "Ashley Platt",
       "notes": "Submit outstanding documents, close open permits, receive permanent CO.",
-      "duration_days": 1
+      "duration_days": 1,
+      "completed": false
     }
   ]
 }
-
