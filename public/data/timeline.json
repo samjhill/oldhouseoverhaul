@@ -110,7 +110,7 @@
       "responsible": "Township Inspector",
       "notes": "Permit card and drawings on-site.",
       "duration_days": 1,
-      "completed": false
+      "completed": true
     },
     {
       "id": "install-staircase",
