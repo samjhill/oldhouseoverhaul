@@ -1,0 +1,407 @@
+.project-timeline-page {
+  background: #f4f4f4;
+  color: #222;
+  min-height: 100vh;
+  padding: 4rem 1.5rem 6rem;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.timeline-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.timeline-hero {
+  text-align: center;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-eyebrow {
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  color: #6b6b6b;
+}
+
+.timeline-hero h1 {
+  margin: 1rem 0 0.75rem;
+  font-size: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.timeline-lede {
+  margin: 0 auto 1.5rem;
+  max-width: 640px;
+  color: #4c4c4c;
+}
+
+.timeline-back-link {
+  text-decoration: none;
+  color: #1f6d7a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s ease;
+}
+
+.timeline-back-link:hover {
+  color: #0f4c58;
+}
+
+.timeline-progress {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.progress-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+  margin: 0 0 0.3rem;
+}
+
+.progress-value {
+  font-size: 2.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.progress-value span {
+  font-size: 1rem;
+  color: #8a8a8a;
+  margin-left: 0.4rem;
+}
+
+.progress-active-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.progress-track {
+  position: relative;
+  height: 6px;
+  background: transparent;
+}
+
+.progress-line {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #dcdcdc;
+}
+
+.progress-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--progress);
+  max-width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1f6d7a, #58a090);
+  transition: width 0.5s ease;
+}
+
+.progress-dot {
+  --dot-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: var(--progress);
+  transform: translate(-50%, -50%);
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 50%;
+  background: #1f6d7a;
+  box-shadow: 0 0 0 0 rgba(31, 109, 122, 0.28);
+  animation: timelinePulse 1.8s infinite;
+}
+
+.timeline-body {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 2.5rem;
+}
+
+.timeline-year-nav {
+  position: sticky;
+  top: 6.5rem;
+  align-self: start;
+}
+
+.year-nav-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.year-nav-link {
+  text-decoration: none;
+  color: #7c7c7c;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.year-nav-link:hover,
+.year-nav-link:focus-visible {
+  color: #1f6d7a;
+  border-color: #1f6d7a;
+}
+
+.timeline-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.year-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.year-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.year-label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.year-descriptor {
+  margin: 0;
+  color: #7a7a7a;
+  font-size: 0.95rem;
+}
+
+.year-sections {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.timeline-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e7e7e7;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  transition: transform 0.45s ease, box-shadow 0.45s ease, border-color 0.3s ease;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.timeline-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.timeline-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timeline-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #f4f4f4;
+  flex-shrink: 0;
+}
+
+.timeline-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.card-title-group {
+  flex: 1;
+}
+
+.card-period {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #7d7d7d;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-title {
+  margin: 0.2rem 0 0;
+  font-size: 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.status-chip {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: #efefef;
+}
+
+.card-list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  color: #424242;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.card-list li {
+  line-height: 1.4;
+}
+
+.timeline-card.status-completed {
+  border-color: #d2f0e1;
+}
+
+.timeline-card.status-completed .status-chip {
+  background: #d2f0e1;
+  color: #1d6a52;
+  border-color: #b2e0cb;
+}
+
+.timeline-card.status-in-progress {
+  border-color: #bfdff0;
+}
+
+.timeline-card.status-in-progress .status-chip {
+  background: #bfdff0;
+  color: #185972;
+  border-color: #97cce4;
+}
+
+.timeline-card.status-upcoming {
+  border-color: #e1e1e1;
+}
+
+.timeline-card.status-upcoming .status-chip {
+  background: #ededed;
+  color: #6d6d6d;
+  border-color: #d1d1d1;
+}
+
+.timeline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes timelinePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(31, 109, 122, 0.35);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(31, 109, 122, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(31, 109, 122, 0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .timeline-body {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-year-nav {
+    position: static;
+    order: 2;
+  }
+
+  .timeline-columns {
+    order: 1;
+  }
+
+  .year-nav-inner {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .year-nav-link {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    padding-left: 0;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-timeline-page {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .timeline-hero {
+    padding: 1.75rem;
+  }
+
+  .timeline-hero h1 {
+    font-size: 2rem;
+  }
+
+  .timeline-progress {
+    padding: 1.5rem;
+  }
+
+  .card-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .status-chip {
+    margin-top: 0.5rem;
+  }
+
+  .timeline-card {
+    padding: 1rem 1.1rem;
+  }
+}
