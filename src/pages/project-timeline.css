@@ -6,7 +6,7 @@
   font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.timeline-shell {
+.project-timeline-page .timeline-shell {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -14,7 +14,7 @@
   gap: 2.5rem;
 }
 
-.timeline-hero {
+.project-timeline-page .timeline-hero {
   text-align: center;
   padding: 2.5rem;
   background: #ffffff;
@@ -22,7 +22,7 @@
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
 }
 
-.timeline-eyebrow {
+.project-timeline-page .timeline-eyebrow {
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -30,19 +30,19 @@
   color: #6b6b6b;
 }
 
-.timeline-hero h1 {
+.project-timeline-page .timeline-hero h1 {
   margin: 1rem 0 0.75rem;
   font-size: 2.5rem;
   letter-spacing: -0.02em;
 }
 
-.timeline-lede {
+.project-timeline-page .timeline-lede {
   margin: 0 auto 1.5rem;
   max-width: 640px;
   color: #4c4c4c;
 }
 
-.timeline-back-link {
+.project-timeline-page .timeline-back-link {
   text-decoration: none;
   color: #1f6d7a;
   font-weight: 600;
@@ -53,11 +53,11 @@
   transition: color 0.2s ease;
 }
 
-.timeline-back-link:hover {
+.project-timeline-page .timeline-back-link:hover {
   color: #0f4c58;
 }
 
-.timeline-progress {
+.project-timeline-page .timeline-progress {
   background: #ffffff;
   border-radius: 18px;
   padding: 1.75rem 2rem;
@@ -67,14 +67,14 @@
   gap: 1.25rem;
 }
 
-.progress-meta {
+.project-timeline-page .progress-meta {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
 
-.progress-label {
+.project-timeline-page .progress-label {
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -82,38 +82,38 @@
   margin: 0 0 0.3rem;
 }
 
-.progress-value {
+.project-timeline-page .progress-value {
   font-size: 2.2rem;
   margin: 0;
   font-weight: 600;
 }
 
-.progress-value span {
+.project-timeline-page .progress-value span {
   font-size: 1rem;
   color: #8a8a8a;
   margin-left: 0.4rem;
 }
 
-.progress-active-title {
+.project-timeline-page .progress-active-title {
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
 }
 
-.progress-track {
+.project-timeline-page .progress-track {
   position: relative;
   height: 6px;
   background: transparent;
 }
 
-.progress-line {
+.project-timeline-page .progress-line {
   position: absolute;
   inset: 0;
   border-radius: 999px;
   background: #dcdcdc;
 }
 
-.progress-fill {
+.project-timeline-page .progress-fill {
   position: absolute;
   inset: 0 auto 0 0;
   width: var(--progress);
@@ -123,7 +123,7 @@
   transition: width 0.5s ease;
 }
 
-.progress-dot {
+.project-timeline-page .progress-dot {
   --dot-size: 16px;
   position: absolute;
   top: 50%;
@@ -137,25 +137,25 @@
   animation: timelinePulse 1.8s infinite;
 }
 
-.timeline-body {
+.project-timeline-page .timeline-body {
   display: grid;
   grid-template-columns: 160px 1fr;
   gap: 2.5rem;
 }
 
-.timeline-year-nav {
+.project-timeline-page .timeline-year-nav {
   position: sticky;
   top: 6.5rem;
   align-self: start;
 }
 
-.year-nav-inner {
+.project-timeline-page .year-nav-inner {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.year-nav-link {
+.project-timeline-page .year-nav-link {
   text-decoration: none;
   color: #7c7c7c;
   font-weight: 600;
@@ -165,49 +165,49 @@
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.year-nav-link:hover,
-.year-nav-link:focus-visible {
+.project-timeline-page .year-nav-link:hover,
+.project-timeline-page .year-nav-link:focus-visible {
   color: #1f6d7a;
   border-color: #1f6d7a;
 }
 
-.timeline-columns {
+.project-timeline-page .timeline-columns {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-.year-block {
+.project-timeline-page .year-block {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.year-header {
+.project-timeline-page .year-header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.year-label {
+.project-timeline-page .year-label {
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
 }
 
-.year-descriptor {
+.project-timeline-page .year-descriptor {
   margin: 0;
   color: #7a7a7a;
   font-size: 0.95rem;
 }
 
-.year-sections {
+.project-timeline-page .year-sections {
   display: grid;
   gap: 1.5rem;
 }
 
-.timeline-card {
+.project-timeline-page .timeline-card {
   background: #ffffff;
   border-radius: 18px;
   border: 1px solid #e7e7e7;
@@ -219,27 +219,27 @@
   transform: translateY(24px);
 }
 
-.timeline-card.is-visible {
+.project-timeline-page .timeline-card.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.timeline-card summary {
+.project-timeline-page .timeline-card summary {
   list-style: none;
   cursor: pointer;
 }
 
-.timeline-card summary::-webkit-details-marker {
+.project-timeline-page .timeline-card summary::-webkit-details-marker {
   display: none;
 }
 
-.card-heading {
+.project-timeline-page .card-heading {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.timeline-icon {
+.project-timeline-page .timeline-icon {
   width: 48px;
   height: 48px;
   display: inline-flex;
@@ -250,16 +250,16 @@
   flex-shrink: 0;
 }
 
-.timeline-icon svg {
+.project-timeline-page .timeline-icon svg {
   width: 28px;
   height: 28px;
 }
 
-.card-title-group {
+.project-timeline-page .card-title-group {
   flex: 1;
 }
 
-.card-period {
+.project-timeline-page .card-period {
   margin: 0;
   font-size: 0.85rem;
   color: #7d7d7d;
@@ -267,13 +267,13 @@
   letter-spacing: 0.08em;
 }
 
-.card-title {
+.project-timeline-page .card-title {
   margin: 0.2rem 0 0;
   font-size: 1.1rem;
   letter-spacing: -0.01em;
 }
 
-.status-chip {
+.project-timeline-page .status-chip {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -283,7 +283,7 @@
   background: #efefef;
 }
 
-.card-list {
+.project-timeline-page .card-list {
   margin: 1rem 0 0;
   padding-left: 1.25rem;
   color: #424242;
@@ -292,41 +292,41 @@
   gap: 0.4rem;
 }
 
-.card-list li {
+.project-timeline-page .card-list li {
   line-height: 1.4;
 }
 
-.timeline-card.status-completed {
+.project-timeline-page .timeline-card.status-completed {
   border-color: #d2f0e1;
 }
 
-.timeline-card.status-completed .status-chip {
+.project-timeline-page .timeline-card.status-completed .status-chip {
   background: #d2f0e1;
   color: #1d6a52;
   border-color: #b2e0cb;
 }
 
-.timeline-card.status-in-progress {
+.project-timeline-page .timeline-card.status-in-progress {
   border-color: #bfdff0;
 }
 
-.timeline-card.status-in-progress .status-chip {
+.project-timeline-page .timeline-card.status-in-progress .status-chip {
   background: #bfdff0;
   color: #185972;
   border-color: #97cce4;
 }
 
-.timeline-card.status-upcoming {
+.project-timeline-page .timeline-card.status-upcoming {
   border-color: #e1e1e1;
 }
 
-.timeline-card.status-upcoming .status-chip {
+.project-timeline-page .timeline-card.status-upcoming .status-chip {
   background: #ededed;
   color: #6d6d6d;
   border-color: #d1d1d1;
 }
 
-.timeline-card:hover {
+.project-timeline-page .timeline-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 25px 55px rgba(0, 0, 0, 0.08);
 }
@@ -344,25 +344,25 @@
 }
 
 @media (max-width: 1024px) {
-  .timeline-body {
+  .project-timeline-page .timeline-body {
     grid-template-columns: 1fr;
   }
 
-  .timeline-year-nav {
+  .project-timeline-page .timeline-year-nav {
     position: static;
     order: 2;
   }
 
-  .timeline-columns {
+  .project-timeline-page .timeline-columns {
     order: 1;
   }
 
-  .year-nav-inner {
+  .project-timeline-page .year-nav-inner {
     flex-direction: row;
     gap: 1rem;
   }
 
-  .year-nav-link {
+  .project-timeline-page .year-nav-link {
     border-left: none;
     border-bottom: 2px solid transparent;
     padding-left: 0;
@@ -375,33 +375,33 @@
     padding: 3rem 1rem 4rem;
   }
 
-  .timeline-hero {
+  .project-timeline-page .timeline-hero {
     padding: 1.75rem;
   }
 
-  .timeline-hero h1 {
+  .project-timeline-page .timeline-hero h1 {
     font-size: 2rem;
   }
 
-  .timeline-progress {
+  .project-timeline-page .timeline-progress {
     padding: 1.5rem;
   }
 
-  .card-heading {
+  .project-timeline-page .card-heading {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .timeline-icon {
+  .project-timeline-page .timeline-icon {
     width: 40px;
     height: 40px;
   }
 
-  .status-chip {
+  .project-timeline-page .status-chip {
     margin-top: 0.5rem;
   }
 
-  .timeline-card {
+  .project-timeline-page .timeline-card {
     padding: 1rem 1.1rem;
   }
 }
