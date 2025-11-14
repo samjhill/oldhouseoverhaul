@@ -124,50 +124,56 @@
       "id": "framing-structural-inspection",
       "task": "Framing / Structural inspection",
       "responsible": "Building Inspector",
-      "notes": "Include new stair framing and fire blocking.",
+      "notes": "Include new stair framing and fire blocking; scheduled Tue Nov 18.",
       "duration_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 12
     },
     {
       "id": "fire-rough-inspection",
       "task": "Fire rough inspection",
       "responsible": "Fire Marshal",
-      "notes": "Coordinate same day as framing if possible.",
+      "notes": "Coordinate same day as framing review if possible; targeting Wed Nov 19.",
       "duration_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 13
     },
     {
       "id": "punchlist-corrections",
       "task": "Correct any punch-list items from rough inspections",
       "responsible": "GC + Subs",
-      "notes": "Minor fixes before insulation phase.",
+      "notes": "Minor fixes before insulation phase; scheduled Thu Nov 20.",
       "duration_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 14
     },
     {
       "id": "apply-mold-armor",
       "task": "Apply Mold Armor / Concrobium",
       "responsible": "GC + Team",
-      "notes": "Coat framing, subfloors, and bath cavities.",
+      "notes": "Coat framing, subfloors, and bath cavities on Fri Nov 21.",
       "duration_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 15
     },
     {
       "id": "begin-insulation",
       "task": "Begin insulation install",
       "responsible": "Insulation Sub",
-      "notes": "Batts in walls and ceilings; spray foam in baths.",
+      "notes": "Batts in walls and ceilings; spray foam in baths starting Sat Nov 22.",
       "duration_days": 2,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 16
     },
     {
       "id": "insulation-inspection",
       "task": "Insulation inspection",
       "responsible": "Building Dept.",
-      "notes": "Required before drywall installation.",
+      "notes": "Required before drywall installation; inspection on Mon Nov 24.",
       "duration_days": 1,
       "gap_after_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 18
     },
     {
       "id": "material-delivery-check",
