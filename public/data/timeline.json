@@ -160,20 +160,20 @@
       "id": "begin-insulation",
       "task": "Begin insulation install",
       "responsible": "Insulation Sub",
-      "notes": "Batts in walls and ceilings; spray foam in baths starting Sat Nov 22.",
+      "notes": "Batts in walls and ceilings after full window install (Mon Dec 8).",
       "duration_days": 2,
       "completed": false,
-      "start_offset_days": 16
+      "start_offset_days": 33
     },
     {
       "id": "insulation-inspection",
       "task": "Insulation inspection",
       "responsible": "Building Dept.",
-      "notes": "Required before drywall installation; inspection on Mon Nov 24.",
+      "notes": "Inspection scheduled Thu Dec 11 after insulation wrap-up.",
       "duration_days": 1,
       "gap_after_days": 1,
       "completed": false,
-      "start_offset_days": 18
+      "start_offset_days": 36
     },
     {
       "id": "material-delivery-check",
@@ -181,6 +181,26 @@
       "responsible": "Team",
       "notes": "Prep for drywall after Thanksgiving.",
       "duration_days": 1,
+      "completed": false
+    },
+    {
+      "id": "window-delivery-1",
+      "task": "Window delivery batch 1",
+      "responsible": "Supplier",
+      "notes": "First set of Andersen units arriving Fri Nov 21.",
+      "duration_days": 1,
+      "start_offset_days": 15,
+      "blocking": true,
+      "completed": false
+    },
+    {
+      "id": "window-delivery-2",
+      "task": "Window delivery batch 2",
+      "responsible": "Supplier",
+      "notes": "Balance of windows delivered Sat Dec 6.",
+      "duration_days": 1,
+      "start_offset_days": 30,
+      "blocking": true,
       "completed": false
     },
     {
