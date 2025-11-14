@@ -15,7 +15,10 @@ const renderImages = import.meta.glob("../assets/images/renders/*.{png,PNG,jpg,j
 const getImageLabel = (filename: string) => {
   const parts = filename.split("/");
   const name = parts[parts.length - 1];
-  return name.replace(/\.[^.]+$/, "").replace(/[_-]+/g, " ");
+  const label = name.replace(/\.[^.]+$/, "");
+  return label
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
 const RendersPage: React.FC = () => {
