@@ -187,22 +187,6 @@
       "completed": false
     },
     {
-      "id": "window-punch",
-      "task": "Window punch & weather-seal touch-ups",
-      "responsible": "GC + Crew",
-      "notes": "Verify shims, spray foam, and exterior sealant before drywall closes walls.",
-      "duration_days": 1,
-      "completed": false
-    },
-    {
-      "id": "begin-drywall",
-      "task": "Begin drywall installation",
-      "responsible": "Drywall Crew",
-      "notes": "Start on 2nd floor, then main level.",
-      "duration_days": 4,
-      "completed": false
-    },
-    {
       "id": "begin-insulation",
       "task": "Begin insulation install",
       "responsible": "Insulation Sub",
@@ -210,6 +194,14 @@
       "duration_days": 2,
       "completed": false,
       "start_offset_days": 33
+    },
+    {
+      "id": "window-punch",
+      "task": "Window punch & weather-seal touch-ups",
+      "responsible": "GC + Crew",
+      "notes": "Verify shims, spray foam, and exterior sealant before drywall closes walls.",
+      "duration_days": 1,
+      "completed": false
     },
     {
       "id": "insulation-inspection",
@@ -222,20 +214,31 @@
       "start_offset_days": 36
     },
     {
+      "id": "begin-drywall",
+      "task": "Begin drywall installation",
+      "responsible": "Drywall Crew",
+      "notes": "Start hanging boards Tue Dec 13 after insulation inspection.",
+      "duration_days": 4,
+      "completed": false,
+      "start_offset_days": 38
+    },
+    {
       "id": "drywall-screw-inspection",
       "task": "Drywall screw inspection",
       "responsible": "Township Inspector",
-      "notes": "Confirm board fastening and fire-rated assemblies prior to taping.",
+      "notes": "Confirm board fastening Wed Dec 17 before mudding.",
       "duration_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 42
     },
     {
       "id": "taping-first-sanding",
       "task": "Taping and first sanding",
       "responsible": "Drywall Crew",
-      "notes": "Allow 48 hours dry time before prime.",
+      "notes": "Allow 48 hours dry time before prime (Dec 18–19).",
       "duration_days": 2,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 43
     },
     {
       "id": "material-delivery-check",
@@ -249,9 +252,10 @@
       "id": "prime-trim-layout",
       "task": "Prime coat and trim layout",
       "responsible": "GC + Painter",
-      "notes": "Start window trim, prep sills.",
+      "notes": "Prime coat and mark trim profiles on Sat Dec 20.",
       "duration_days": 1,
-      "completed": false
+      "completed": false,
+      "start_offset_days": 45
     },
     {
       "id": "tile-backer",
