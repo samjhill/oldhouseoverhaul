@@ -83,7 +83,8 @@ const timelineContent = [
         status: "upcoming",
         items: [
           "Nov 12, 2025 — Rough-in plumbing PASSED",
-          "Electrical & HVAC inspections",
+          "Electrical & HVAC inspections PASSED",
+          "Install windows",
         ],
       },
       {
