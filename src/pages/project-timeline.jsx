@@ -67,7 +67,7 @@ const timelineContent = [
         title: "Jul–Aug 2025 — Mechanical Rough-ins",
         timeframe: "Jul–Aug 2025",
         icon: "mechanical",
-        status: "in-progress",
+        status: "completed",
         items: [
           "Electrical rough-in",
           "Plumbing rough-in",
@@ -80,11 +80,11 @@ const timelineContent = [
         title: "Fall 2025 — Inspections",
         timeframe: "Fall 2025",
         icon: "inspection",
-        status: "upcoming",
+        status: "in-progress",
         items: [
           "Nov 12, 2025 — Rough-in plumbing PASSED",
           "Electrical & HVAC inspections PASSED",
-          "Install windows",
+          "Framing inspection",
         ],
       },
       {
@@ -97,6 +97,7 @@ const timelineContent = [
           "Mineral wool installation (R-18 + secondary layer)",
           "Sound/fire insulation",
           "Air sealing",
+          "Install windows",
         ],
       },
     ],
