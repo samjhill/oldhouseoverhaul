@@ -118,7 +118,7 @@
       "responsible": "Cris + Carpenter",
       "notes": "Verify tread/riser dimensions and add temporary guardrail.",
       "duration_days": 1,
-      "completed": false
+      "completed": true
     },
     {
       "id": "framing-structural-inspection",
