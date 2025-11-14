@@ -89,7 +89,7 @@ const timelineContent = [
       },
       {
         id: "insulation",
-        title: "Nov–Dec 2025 — Insulation",
+        title: "Nov–Dec 2025 — Insulation and Windows",
         timeframe: "Nov–Dec 2025",
         icon: "insulation",
         status: "upcoming",
