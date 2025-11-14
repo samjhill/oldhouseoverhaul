@@ -65,6 +65,16 @@
       "completed": false
     },
     {
+      "id": "order-drywall",
+      "task": "Order drywall and mud materials",
+      "responsible": "Sam Hill",
+      "notes": "Coordinate drywall sheets, corner bead, mud, and fasteners with supplier; allow 4-week lead.",
+      "duration_days": 1,
+      "start_offset_days": -3,
+      "blocking": false,
+      "completed": false
+    },
+    {
       "id": "finish-1f-subfloors",
       "task": "Finish 1st-floor subfloors",
       "responsible": "Cris",
