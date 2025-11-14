@@ -21,11 +21,19 @@ const getImageLabel = (filename: string) => {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 };
 
+const isLegacyFilename = (filename: string) => {
+  const parts = filename.split("/");
+  const name = parts[parts.length - 1];
+  const base = name.replace(/\.[^.]+$/, "");
+  return /^[0-9A-F-]+$/i.test(base);
+};
+
 const RendersPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<RenderImage | null>(null);
 
   const images = useMemo<RenderImage[]>(() => {
     return Object.entries(renderImages)
+      .filter(([path]) => !isLegacyFilename(path))
       .map(([path, src]) => ({
         src,
         filename: path,
