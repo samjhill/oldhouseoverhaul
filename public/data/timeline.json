@@ -236,18 +236,10 @@
       "completed": false
     },
     {
-      "id": "waterproofing-inspection",
-      "task": "Shower waterproofing inspection",
-      "responsible": "Building Dept.",
-      "notes": "Flood test pans, document membrane coverage before tile goes up.",
-      "duration_days": 1,
-      "completed": false
-    },
-    {
       "id": "tile-steam-shower",
       "task": "Tile steam shower",
       "responsible": "Tile Sub",
-      "notes": "Ensure waterproofing inspection complete prior to tile.",
+      "notes": "Install tile in steam shower and wet areas.",
       "duration_days": 3,
       "completed": false
     },
