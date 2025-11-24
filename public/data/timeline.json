@@ -136,7 +136,7 @@
       "responsible": "Building Inspector",
       "notes": "Include new stair framing and fire blocking; scheduled Tue Nov 18.",
       "duration_days": 1,
-      "completed": false,
+      "completed": true,
       "start_offset_days": 12
     },
     {
@@ -174,7 +174,7 @@
       "duration_days": 1,
       "start_offset_days": 15,
       "blocking": true,
-      "completed": false
+      "completed": true
     },
     {
       "id": "window-delivery-2",
