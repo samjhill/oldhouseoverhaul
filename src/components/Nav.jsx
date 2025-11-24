@@ -12,6 +12,7 @@ function Nav() {
           <Link to="/progress" className="nav-link">Project Progress</Link>
           <Link to="/timeline" className="nav-link">Project Timeline</Link>
           <Link to="/renders" className="nav-link">Design Renders</Link>
+          <Link to="/material-selections" className="nav-link">Material Selections</Link>
         </div>
       </div>
     </nav>

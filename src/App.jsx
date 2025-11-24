@@ -3,6 +3,7 @@ import "./App.css";
 import ProgressPage from "./pages/progress";
 import RendersPage from "./pages/renders";
 import ProjectTimelinePage from "./pages/project-timeline";
+import MaterialSelectionsPage from "./pages/material-selections";
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
@@ -16,6 +17,7 @@ function App() {
         <Route path="/progress" element={<ProgressPage />} />
         <Route path="/timeline" element={<ProjectTimelinePage />} />
         <Route path="/renders" element={<RendersPage />} />
+        <Route path="/material-selections" element={<MaterialSelectionsPage />} />
       </Routes>
       
       <footer className="footer">
