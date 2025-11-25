@@ -80,7 +80,7 @@ const timelineContent = [
         title: "Fall 2025 — Inspections",
         timeframe: "Fall 2025",
         icon: "inspection",
-        status: "in-progress",
+        status: "completed",
         items: [
           "Nov 12, 2025 — Rough-in plumbing PASSED",
           "Electrical & HVAC inspections PASSED",
@@ -92,7 +92,7 @@ const timelineContent = [
         title: "Nov–Dec 2025 — Insulation and Windows",
         timeframe: "Nov–Dec 2025",
         icon: "insulation",
-        status: "upcoming",
+        status: "in-progress",
         items: [
           "Mineral wool installation (R-18 + secondary layer)",
           "Sound/fire insulation",
