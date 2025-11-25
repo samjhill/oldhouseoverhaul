@@ -14,12 +14,14 @@ const MaterialSelectionsPage: React.FC = () => {
       </div>
 
       <div className="material-selections-container">
-        <iframe
-          src="https://www.figma.com/proto/F6PSG35Vmzg9OPuL36Q6ez/Sam---Ashley?page-id=0%3A1&type=design&node-id=103-132&viewport=78%2C248%2C0.13&t=OfCKOpBi5KCOLY48-1&scaling=contain"
-          title="Material Selections"
-          className="material-selections-iframe"
-          allow="fullscreen"
-        />
+        <a
+          href="https://www.figma.com/proto/F6PSG35Vmzg9OPuL36Q6ez/Sam---Ashley?page-id=0%3A1&type=design&node-id=103-132&viewport=78%2C248%2C0.13&t=OfCKOpBi5KCOLY48-1&scaling=contain"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="material-selections-link"
+        >
+          View Material Selections in Figma
+        </a>
       </div>
     </div>
   );
